@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://gdelt.org/cameo/"
      xml:base="http://gdelt.org/cameo/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:lumify="http://lumify.io#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:cameo="http://gdelt.org/cameo/"
      xmlns:gdelt="http://gdelt.org/vocab/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:lumify="http://lumify.io#">
     <owl:Ontology rdf:about="http://gdelt.org/cameo/">
-        <rdfs:seeAlso>http://eventdata.parusanalytics.com/data.dir/cameo.html</rdfs:seeAlso>
-        <license>MIT License</license>
-        <author>http://w3id.org/people/rictomm/</author>
         <author>http://w3id.org/people/alexmv12</author>
+        <author>http://w3id.org/people/rictomm/</author>
+        <license>MIT License</license>
+        <rdfs:seeAlso>http://eventdata.parusanalytics.com/data.dir/cameo.html</rdfs:seeAlso>
     </owl:Ontology>
     
 
@@ -123,6 +123,225 @@
         <rdfs:range rdf:resource="http://gdelt.org/cameo/Actor"/>
         <rdfs:label xml:lang="en">Was Acted Upon</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://gdelt.org/cameo/actor1Code -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/actor1Code">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>actorCode</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/actorCountry -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/actorCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>actorCountry</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/actorName -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/actorName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>actorName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/articlesNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/articlesNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/EventType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/dff -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/dff">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>geoLNAG</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/geoADM1Code -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/geoADM1Code">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/geoADM2Code -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/geoADM2Code">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/geoCountryCode -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/geoCountryCode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/geoFeatureID -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/geoFeatureID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/geoFullName -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/geoFullName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/geoLAT -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/geoLAT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/goldsteinScale -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/goldsteinScale">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/EventType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/heh -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/heh">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>actorKnownGroup</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/isRootEvent -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/isRootEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/EventType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/mentionsNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/mentionsNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/EventType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/mm -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/mm">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>actorReligion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/sourcesNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/sourcesNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/EventType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/thjk -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/thjk">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>geoType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/toneAverage -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/toneAverage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/EventType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://gdelt.org/cameo/ty -->
+
+    <owl:DatatypeProperty rdf:about="http://gdelt.org/cameo/ty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://gdelt.org/cameo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>actorEthnic</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -8941,5 +9160,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

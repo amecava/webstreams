@@ -5,6 +5,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="cs" IRI="http://www.kulttuurisampo.fi/ebkr/"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="eo" IRI="http://purl.org/NET/c4dm/event.owl#"/>
@@ -123,6 +124,12 @@
         <ObjectProperty abbreviatedIRI="sem:type"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty abbreviatedIRI="rdf:type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdfs:subClassOf"/>
+    </Declaration>
+    <Declaration>
         <DataProperty abbreviatedIRI="sem:hasBeginTimeStamp"/>
     </Declaration>
     <Declaration>
@@ -144,25 +151,22 @@
         <DataProperty abbreviatedIRI="sem:hasTimeStamp"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:relatedMatch"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="rdfs:subClassOf"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#eventSourceURL"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:broadMatch"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="rdf:type"/>
+        <AnnotationProperty abbreviatedIRI="skos:closeMatch"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:narrowMatch"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:closeMatch"/>
+        <AnnotationProperty abbreviatedIRI="skos:relatedMatch"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="sem:Actor"/>
@@ -375,6 +379,10 @@
     <SubDataPropertyOf>
         <DataProperty abbreviatedIRI="sem:hasLatestEndTimeStamp"/>
         <DataProperty abbreviatedIRI="sem:hasEndTimeStamp"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#eventSourceURL"/>
+        <DataProperty IRI="topDataProperty"/>
     </SubDataPropertyOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
