@@ -151,9 +151,6 @@
         <DataProperty abbreviatedIRI="sem:hasTimeStamp"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#eventSourceURL"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:broadMatch"/>
     </Declaration>
     <Declaration>
@@ -379,10 +376,6 @@
     <SubDataPropertyOf>
         <DataProperty abbreviatedIRI="sem:hasLatestEndTimeStamp"/>
         <DataProperty abbreviatedIRI="sem:hasEndTimeStamp"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#eventSourceURL"/>
-        <DataProperty IRI="topDataProperty"/>
     </SubDataPropertyOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -818,7 +811,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sem:accordingTo</AbbreviatedIRI>
-        <Literal>according to</Literal>
+        <Literal>accordingTo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -828,7 +821,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sem:actorType</AbbreviatedIRI>
-        <Literal>has actor type</Literal>
+        <Literal>actorType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -848,7 +841,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sem:eventType</AbbreviatedIRI>
-        <Literal>has event type</Literal>
+        <Literal>eventType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -858,7 +851,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sem:hasActor</AbbreviatedIRI>
-        <Literal>has Actor</Literal>
+        <Literal>hasActor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
@@ -938,7 +931,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sem:hasPlace</AbbreviatedIRI>
-        <Literal>has Place</Literal>
+        <Literal>hasPlace</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
@@ -958,7 +951,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sem:hasSubEvent</AbbreviatedIRI>
-        <Literal>has subevent</Literal>
+        <Literal>hasSubevent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
@@ -983,7 +976,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sem:hasTime</AbbreviatedIRI>
-        <Literal>has Time</Literal>
+        <Literal>hasTime</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:broadMatch"/>
@@ -998,7 +991,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sem:hasTimeStamp</AbbreviatedIRI>
-        <Literal>has timestamp</Literal>
+        <Literal>hasTimestamp</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:closeMatch"/>
@@ -1013,7 +1006,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sem:placeType</AbbreviatedIRI>
-        <Literal>has place type</Literal>
+        <Literal>placeType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1023,7 +1016,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sem:roleType</AbbreviatedIRI>
-        <Literal>has role type</Literal>
+        <Literal>roleType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1043,7 +1036,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sem:subTypeOf</AbbreviatedIRI>
-        <Literal>subtype of</Literal>
+        <Literal>subTypeOf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1053,7 +1046,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sem:timeType</AbbreviatedIRI>
-        <Literal>has time type</Literal>
+        <Literal>timeType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
