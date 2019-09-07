@@ -11,10 +11,10 @@
 
 
 <source>  rml:source [
-                a vocals:Stream ;
-                vocals:streamName "GDELTStream" ;
-             ] ;
-             rml:referenceFormulation ql:CSV .
+    a vocals:Stream ;
+    vocals:streamName "GDELTStream" ;
+  ] ;
+  rml:referenceFormulation ql:CSV .
 
 <#GDELTMapping> a rr:TriplesMap ;
   rml:logicalSource  <source>;
