@@ -119,21 +119,21 @@
     ];
 
   rr:predicateObjectMap [
-    rr:predicate dul:hasPart;
+    rr:predicate dul:includesEvent;
     rr:objectMap [
       rr:template "http://gdelt.stream/onto/cameo/{EventBaseCode}";
       ]
   ];
 
   rr:predicateObjectMap [
-    rr:predicate dul:hasPart;
+    rr:predicate dul:includesEvent;
     rr:objectMap [
       rr:template "http://gdelt.stream/onto/cameo/{EventRootCode}";
       ]
     ];
 
   rr:predicateObjectMap [
-    rr:predicate dul:hasPart;
+    rr:predicate dul:includesEvent;
     rr:objectMap [
       rml:reference "QuadClass";
       ]
