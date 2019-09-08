@@ -8,6 +8,7 @@
 @prefix carml: <http://carml.taxonic.com/carml/> .
 @prefix vocals: <http://w3id.org/rsp/vocals#> .
 @prefix lode: <http://linkedevents.org/ontology/>.
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/>.
 
 
 <source>  rml:source [
