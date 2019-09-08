@@ -32,7 +32,7 @@
     ];
 
   rr:predicateObjectMap [
-    rr:predicate dul:hasLocation;
+    rr:predicate dul:hasRegion;
      rr:objectMap [ rr:parentTriplesMap <#PlaceTriplesMap> ];
     ];
 
@@ -54,21 +54,21 @@
     ];
 
   rr:predicateObjectMap [
-    rr:predicate dul:hasTimeInterval;
+    rr:predicate dul:hasEventDate;
     rr:objectMap [
       rml:reference "SQLDATE";
       ]
     ];
 
   rr:predicateObjectMap [
-    rr:predicate dul:hasTimeInterval;
+    rr:predicate dul:hasEventDate;
     rr:objectMap [
       rml:reference "MonthYear";
       ]
     ];
 
   rr:predicateObjectMap [
-    rr:predicate dul:hasTimeInterval;
+    rr:predicate dul:hasEventDate;
     rr:objectMap [
       rml:reference "Year";
       ]
@@ -155,10 +155,9 @@
     ];
 
   rr:predicateObjectMap [
-    rr:predicate dul:hasRegion;
+    rr:predicate dul:hasQuality;
     rr:objectMap [
       rml:reference "ActionGeo_Type";
-      rr:class dul:Parameter
       ]
     ];
 
@@ -221,32 +220,29 @@
     ];
 
   rr:predicateObjectMap [
-    rr:predicate dul:hasLocation;
+    rr:predicate dul:hasRegion;
     rr:objectMap [ rr:parentTriplesMap <#Actor1PlaceTriplesMap> ];
     ];
 
   rr:predicateObjectMap [
-    rr:predicate sem:actorType;
+    rr:predicate gdelt:actorType;
     rr:objectMap [
       rml:reference "Actor1Type1Code";
-      rr:class sem:ActorType;
       ]
     ];
 
   rr:predicateObjectMap [
-    rr:predicate sem:actorType;
+    rr:predicate gdelt:actorType;
     rr:objectMap [
       rml:reference "Actor1Type2Code";
-      rr:class sem:ActorType;
       ]
     ];
 
   rr:predicateObjectMap [
-    rr:predicate sem:actorType;
+    rr:predicate gdelt:actorType;
     rr:objectMap [
       rml:reference "Actor1Type3Code";
-      rr:class sem:ActorType;
-      ]
+            ]
     ];
 
   rr:predicateObjectMap [
@@ -296,14 +292,13 @@
   <#Actor1PlaceTriplesMap> rml:logicalSource <source> ;
 
   rr:subjectMap [
-      rr:class sem:Place
+      rr:class dul:SpaceRegion
     ];
 
   rr:predicateObjectMap [
-    rr:predicate sem:placeType;
+    rr:predicate dul:hasQuality;
     rr:objectMap [
       rml:reference "Actor1Geo_Type";
-      rr:class sem:PlaceType
       ]
     ];
 
@@ -362,35 +357,32 @@
 
   rr:subjectMap [
       rr:template "http://gdelt.stream/inst/{Actor2Name}";
-      rr:class sem:Actor
+      rr:class dul:Agent
     ];
 
   rr:predicateObjectMap [
-    rr:predicate sem:hasPlace;
+    rr:predicate dul:hasRegion;
     rr:objectMap [ rr:parentTriplesMap <#Actor2PlaceTriplesMap> ];
     ];
 
   rr:predicateObjectMap [
-    rr:predicate sem:actorType;
+    rr:predicate gdelt:actorType;
     rr:objectMap [
       rml:reference "Actor2Type1Code";
-      rr:class sem:ActorType;
       ]
     ];
 
   rr:predicateObjectMap [
-    rr:predicate sem:actorType;
+    rr:predicate gdelt:actorType;
     rr:objectMap [
       rml:reference "Actor2Type2Code";
-      rr:class sem:ActorType;
       ]
     ];
 
   rr:predicateObjectMap [
-    rr:predicate sem:actorType;
+    rr:predicate gdelt:actorType;
     rr:objectMap [
       rml:reference "Actor2Type3Code";
-      rr:class sem:ActorType;
       ]
     ];
 
@@ -441,14 +433,13 @@
   <#Actor2PlaceTriplesMap> rml:logicalSource <source> ;
 
   rr:subjectMap [
-      rr:class sem:Place
+      rr:class dul:SpaceRegion
     ];
 
   rr:predicateObjectMap [
-    rr:predicate sem:placeType;
+    rr:predicate dul:hasQuality;
     rr:objectMap [
       rml:reference "Actor2Geo_Type";
-      rr:class sem:PlaceType
       ]
     ];
 
