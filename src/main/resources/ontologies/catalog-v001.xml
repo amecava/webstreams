@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1555079571412" name="http://geldt.org/cameo/" uri="cameo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1555079571412" name="http://geldt.org/vocab/" uri="geldt.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1555079571412" name="urn:absolute:www.gdelt.org/gcam" uri="gcam.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568022821697" name="http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl" uri="F.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568022821697" name="http://gdelt.org/cameo/" uri="cameo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568022821697" name="http://gdelt.org/vocab/" uri="gdelt.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568022821697" name="http://gdelt.stream/onto/lode/" uri="LODE.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568022821697" name="http://www.w3.org/2002/07/owl#" uri="SEM.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568022821697" name="http://www.wikimediaonto.org" uri="wikimedia.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568022821697" name="urn:absolute:www.gdelt.org/gcam" uri="gcam.owl"/>
     </group>
 </catalog>

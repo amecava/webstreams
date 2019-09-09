@@ -7,7 +7,7 @@
 @prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix carml: <http://carml.taxonic.com/carml/> .
 @prefix vocals: <http://w3id.org/rsp/vocals#> .
-@prefix f: <http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#> .
+@prefix f: <http://gdelt.stream/onto/f/> .
 @prefix dul: <http://www.loa-cnr.it/ontologies/DUL.owl#> .
 
 

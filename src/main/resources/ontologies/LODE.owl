@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://linkedevents.org/ontology/"
+     xml:base="http://gdelt.stream/onto/lode/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://linkedevents.org/ontology/">
+     ontologyIRI="http://gdelt.stream/onto/lode/">
     <Prefix name="" IRI="http://linkedevents.org/ontology/"/>
     <Prefix name="dbo" IRI="http://dbpedia.org/ontology/"/>
     <Prefix name="dbp" IRI="http://dbpedia.org/property/"/>
@@ -36,13 +36,7 @@
         <Class IRI="http://purl.org/NET/c4dm/event.owl#Event"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/NET/cidoc-crm/core#E2_Temporal_Entity"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="dctype:Event"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dcterm:IMT"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
@@ -90,18 +84,6 @@
         <ObjectProperty IRI="http://purl.org/NET/c4dm/event.owl#agent"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.org/NET/cidoc-crm/core#P11_had_participant"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.org/NET/cidoc-crm/core#P12_occurred_in_the_presence_of"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.org/NET/cidoc-crm/core#P4_has_time-span"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.org/NET/cidoc-crm/core#P7_took_place_at"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
     </Declaration>
     <Declaration>
@@ -141,27 +123,11 @@
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="Event"/>
-        <Class IRI="http://purl.org/NET/cidoc-crm/core#E2_Temporal_Entity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Event"/>
         <Class abbreviatedIRI="dctype:Event"/>
     </SubClassOf>
-    <ClassAssertion>
-        <Class abbreviatedIRI="dcterm:IMT"/>
-        <AnonymousIndividual nodeID="_:genid2147483652"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="dcterm:IMT"/>
-        <AnonymousIndividual nodeID="_:genid2147483654"/>
-    </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="atPlace"/>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="atTime"/>
-        <ObjectProperty IRI="http://purl.org/NET/cidoc-crm/core#P4_has_time-span"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="atTime"/>
@@ -178,18 +144,6 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://purl.org/NET/c4dm/event.owl#agent"/>
         <ObjectProperty IRI="involvedAgent"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.org/NET/cidoc-crm/core#P11_had_participant"/>
-        <ObjectProperty IRI="involvedAgent"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.org/NET/cidoc-crm/core#P12_occurred_in_the_presence_of"/>
-        <ObjectProperty IRI="involved"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.org/NET/cidoc-crm/core#P7_took_place_at"/>
-        <ObjectProperty IRI="inSpace"/>
     </SubObjectPropertyOf>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="atTime"/>
@@ -254,11 +208,6 @@
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dcterm:issued"/>
-        <IRI>Event</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2009-07-28</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Event</IRI>
         <Literal xml:lang="en">
@@ -277,11 +226,6 @@ specify that an event involves a change of state, nor does it attempt
 to distinguish events from processes or states.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>Event</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Event</IRI>
         <Literal xml:lang="en">Event</Literal>
@@ -294,11 +238,6 @@ to distinguish events from processes or states.</Literal>
 explained by a historian.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dcterm:issued"/>
-        <IRI>atPlace</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2009-07-28</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>atPlace</IRI>
         <Literal xml:lang="en">
@@ -307,11 +246,6 @@ have a name (e.g. &quot;Paris&quot;) or may be defined relative to some other
 entity or entities (e.g. &quot;the unincorporated area between Carson and
 Harbor Gateway&quot;). An event may be related to more than one such
 place.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>atPlace</IRI>
-        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -324,11 +258,6 @@ place.</Literal>
         <Literal xml:lang="en">
 a named or relatively specified place that is where
 an event happened.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dcterm:issued"/>
-        <IRI>atTime</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2009-07-28</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -348,11 +277,6 @@ boundaries, i.e. a span of time. An event can be related to only one
 such span of time.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>atTime</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>atTime</IRI>
         <Literal xml:lang="en">at time</Literal>
@@ -363,11 +287,6 @@ such span of time.</Literal>
         <Literal xml:lang="en">
 an abstract instant or interval of
 time that is when an event happened.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dcterm:issued"/>
-        <IRI>circa</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2009-07-28</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -384,11 +303,6 @@ of the former.</Literal>
         <Literal xml:lang="en">An temporal relation expressing nearness in time.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>circa</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>circa</IRI>
         <Literal xml:lang="en">circa</Literal>
@@ -401,21 +315,11 @@ an interval of time that can be
 precisely described using calendar dates and clock times.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dcterm:issued"/>
-        <IRI>illustrate</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2010-10-07</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>illustrate</IRI>
         <Literal xml:lang="en">
 This property relates any thing (typically a media object) to an event which it
 illustrates, documents or comments upon.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>illustrate</IRI>
-        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -427,11 +331,6 @@ illustrates, documents or comments upon.</Literal>
         <IRI>illustrate</IRI>
         <Literal xml:lang="en">
 an event illustrated by some thing (typically a media object)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dcterm:issued"/>
-        <IRI>inSpace</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2009-07-28</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -451,11 +350,6 @@ boundaries, i.e. a region of space. An event can be related to only
 one such region of space.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>inSpace</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>inSpace</IRI>
         <Literal xml:lang="en">in space</Literal>
@@ -468,11 +362,6 @@ an abstract region of space (e.g. a
 geospatial point or region) that is where an event happened.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dcterm:issued"/>
-        <IRI>involved</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2009-07-28</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>involved</IRI>
         <Literal xml:lang="en">
@@ -480,11 +369,6 @@ This property relates an event to any physical, social, or mental
 object or substance. It does not imply any causal relationship or
 influence or any other kind of explanatory relationship such as
 creation, destruction, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>involved</IRI>
-        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -499,11 +383,6 @@ a (physical, social, or mental) object involved in
 an event.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dcterm:issued"/>
-        <IRI>involvedAgent</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2009-07-28</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>involvedAgent</IRI>
         <Literal xml:lang="en">
@@ -511,11 +390,6 @@ This property relates an event to anything with agency, such as a
 (legal or natural) person, a group, an organization, a computational
 agent, etc. It does not imply any causal relationship, influence,
 intentionality, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>involvedAgent</IRI>
-        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -529,62 +403,62 @@ intentionality, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dcterm:format"/>
-        <IRI>html/</IRI>
-        <AnonymousIndividual nodeID="_:genid2147483652"/>
+        <IRI>http://linkedevents.org/ontology/html/</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dcterm:format"/>
-        <IRI>rdfxml/</IRI>
-        <AnonymousIndividual nodeID="_:genid2147483654"/>
+        <IRI>http://linkedevents.org/ontology/rdfxml/</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdf:value"/>
-        <AnonymousIndividual nodeID="_:genid2147483652"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
         <Literal>text/html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AnonymousIndividual nodeID="_:genid2147483652"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
         <Literal xml:lang="en">HTML</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdf:value"/>
-        <AnonymousIndividual nodeID="_:genid2147483654"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
         <Literal>application/rdf+xml</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AnonymousIndividual nodeID="_:genid2147483654"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
         <Literal xml:lang="en">RDF/XML</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
-        <AnonymousIndividual nodeID="_:genid2147483655"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
         <IRI>http://www.cwi.nl/~troncy/</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483655"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
         <Literal>Raphaël Troncy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
-        <AnonymousIndividual nodeID="_:genid2147483656"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
         <IRI>http://www.cwi.nl/~lynda/</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483656"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
         <Literal>Lynda Hardman</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
-        <AnonymousIndividual nodeID="_:genid2147483657"/>
+        <AnonymousIndividual nodeID="_:genid2147483652"/>
         <IRI>http://aeshin.org/</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483657"/>
+        <AnonymousIndividual nodeID="_:genid2147483652"/>
         <Literal>Ryan Shaw</Literal>
     </AnnotationAssertion>
 </Ontology>

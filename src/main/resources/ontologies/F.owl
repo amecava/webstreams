@@ -1,27 +1,15 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY DUL "http://www.loa-cnr.it/ontologies/DUL.owl#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY model "http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#" >
-]>
-
-
 <rdf:RDF xmlns="http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#"
      xml:base="http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:model="http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#"
-     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:model="http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#">
+    <owl:Ontology rdf:about="http://gdelt.stream/onto/f/">
         <owl:imports rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl"/>
     </owl:Ontology>
     
@@ -38,184 +26,184 @@
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#hasEventParticipant -->
+    <!-- http://gdelt.stream/onto/f/#hasEventParticipant -->
 
-    <owl:ObjectProperty rdf:about="#hasEventParticipant">
-        <rdfs:subPropertyOf rdf:resource="&DUL;hasParticipant"/>
+    <owl:ObjectProperty rdf:about="http://gdelt.stream/onto/f/#hasEventParticipant">
+        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant"/>
+        <owl:inverseOf rdf:resource="http://gdelt.stream/onto/f/#isEventParticipant"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
-                <owl:someValuesFrom rdf:resource="#DescribedEvent"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+                <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#DescribedEvent"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
-                <owl:someValuesFrom rdf:resource="#Participant"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+                <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#Participant"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#includesSpace -->
+    <!-- http://gdelt.stream/onto/f/#includesSpace -->
 
-    <owl:ObjectProperty rdf:about="#includesSpace">
-        <owl:inverseOf rdf:resource="#isSpaceIncludedIn"/>
-        <rdfs:subPropertyOf rdf:resource="&DUL;isSettingFor"/>
+    <owl:ObjectProperty rdf:about="http://gdelt.stream/onto/f/#includesSpace">
+        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor"/>
+        <owl:inverseOf rdf:resource="http://gdelt.stream/onto/f/#isSpaceIncludedIn"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#includesSpaceTime -->
+    <!-- http://gdelt.stream/onto/f/#includesSpaceTime -->
 
-    <owl:ObjectProperty rdf:about="#includesSpaceTime">
-        <owl:inverseOf rdf:resource="#isSpaceTimeIncludedIn"/>
-        <rdfs:subPropertyOf rdf:resource="&DUL;isSettingFor"/>
+    <owl:ObjectProperty rdf:about="http://gdelt.stream/onto/f/#includesSpaceTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor"/>
+        <owl:inverseOf rdf:resource="http://gdelt.stream/onto/f/#isSpaceTimeIncludedIn"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#isEventParticipant -->
+    <!-- http://gdelt.stream/onto/f/#isEventParticipant -->
 
-    <owl:ObjectProperty rdf:about="#isEventParticipant">
-        <owl:inverseOf rdf:resource="#hasEventParticipant"/>
-        <rdfs:subPropertyOf rdf:resource="&DUL;isParticipantIn"/>
+    <owl:ObjectProperty rdf:about="http://gdelt.stream/onto/f/#isEventParticipant">
+        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
-                <owl:someValuesFrom rdf:resource="#Participant"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+                <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#Participant"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
-                <owl:someValuesFrom rdf:resource="#DescribedEvent"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+                <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#DescribedEvent"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#isSpaceIncludedIn -->
+    <!-- http://gdelt.stream/onto/f/#isSpaceIncludedIn -->
 
-    <owl:ObjectProperty rdf:about="#isSpaceIncludedIn">
-        <rdfs:range rdf:resource="&DUL;Situation"/>
-        <rdfs:domain rdf:resource="&DUL;SpaceRegion"/>
-        <rdfs:subPropertyOf rdf:resource="&DUL;hasSetting"/>
+    <owl:ObjectProperty rdf:about="http://gdelt.stream/onto/f/#isSpaceIncludedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting"/>
+        <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"/>
+        <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#isSpaceTimeIncludedIn -->
+    <!-- http://gdelt.stream/onto/f/#isSpaceTimeIncludedIn -->
 
-    <owl:ObjectProperty rdf:about="#isSpaceTimeIncludedIn">
-        <rdfs:range rdf:resource="&DUL;Situation"/>
-        <rdfs:domain rdf:resource="&DUL;SpatioTemporalRegion"/>
-        <rdfs:subPropertyOf rdf:resource="&DUL;hasSetting"/>
+    <owl:ObjectProperty rdf:about="http://gdelt.stream/onto/f/#isSpaceTimeIncludedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting"/>
+        <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
+        <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#classifies -->
 
-    <owl:ObjectProperty rdf:about="&DUL;classifies"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#defines -->
 
-    <owl:ObjectProperty rdf:about="&DUL;defines"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant -->
 
-    <owl:ObjectProperty rdf:about="&DUL;hasParticipant"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting -->
 
-    <owl:ObjectProperty rdf:about="&DUL;hasSetting"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent -->
 
-    <owl:ObjectProperty rdf:about="&DUL;includesEvent"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#includesObject -->
 
-    <owl:ObjectProperty rdf:about="&DUL;includesObject"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#includesObject"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#includesTime -->
 
-    <owl:ObjectProperty rdf:about="&DUL;includesTime"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#includesTime"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy -->
 
-    <owl:ObjectProperty rdf:about="&DUL;isClassifiedBy"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn -->
 
-    <owl:ObjectProperty rdf:about="&DUL;isDefinedIn"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn -->
 
-    <owl:ObjectProperty rdf:about="&DUL;isEventIncludedIn"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn -->
 
-    <owl:ObjectProperty rdf:about="&DUL;isObjectIncludedIn"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy -->
 
-    <owl:ObjectProperty rdf:about="&DUL;isParametrizedBy"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn -->
 
-    <owl:ObjectProperty rdf:about="&DUL;isParticipantIn"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy -->
 
-    <owl:ObjectProperty rdf:about="&DUL;isSatisfiedBy"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor -->
 
-    <owl:ObjectProperty rdf:about="&DUL;isSettingFor"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes -->
 
-    <owl:ObjectProperty rdf:about="&DUL;parametrizes"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#satisfies -->
 
-    <owl:ObjectProperty rdf:about="&DUL;satisfies"/>
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#satisfies"/>
     
 
 
@@ -230,196 +218,175 @@
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#Cause -->
+    <!-- http://gdelt.stream/onto/f/#Cause -->
 
-    <owl:Class rdf:about="#Cause">
-        <rdfs:subClassOf rdf:resource="#EventRole"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#Cause">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#EventRole"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isDefinedIn"/>
-                <owl:onClass rdf:resource="#EventCausalityDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
                 <owl:allValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isEventIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="#EventCausalitySituation"/>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#Component -->
-
-    <owl:Class rdf:about="#Component">
-        <rdfs:subClassOf rdf:resource="#EventRole"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isEventIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="#EventCompositionSituation"/>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventCausalitySituation"/>
                     </owl:Restriction>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isDefinedIn"/>
-                <owl:onClass rdf:resource="#EventCompositionDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventCausalityDescription"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#Composite -->
+    <!-- http://gdelt.stream/onto/f/#Component -->
 
-    <owl:Class rdf:about="#Composite">
-        <rdfs:subClassOf rdf:resource="#EventRole"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#Component">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#EventRole"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isDefinedIn"/>
-                <owl:onClass rdf:resource="#EventCompositionDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
                 <owl:allValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isEventIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="#EventCompositionSituation"/>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#Correlate -->
-
-    <owl:Class rdf:about="#Correlate">
-        <rdfs:subClassOf rdf:resource="#EventRole"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isDefinedIn"/>
-                <owl:onClass rdf:resource="#EventCorrelationDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isEventIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="#EventCorrelationSituation"/>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#DescribedEvent -->
-
-    <owl:Class rdf:about="#DescribedEvent">
-        <rdfs:subClassOf rdf:resource="#EventRole"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isDefinedIn"/>
-                <owl:onClass rdf:resource="#EventParticipationDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isEventIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="#EventParticipationSituation"/>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#Effect -->
-
-    <owl:Class rdf:about="#Effect">
-        <rdfs:subClassOf rdf:resource="#EventRole"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isEventIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="#EventCausalitySituation"/>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventCompositionSituation"/>
                     </owl:Restriction>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isDefinedIn"/>
-                <owl:onClass rdf:resource="#EventCausalityDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventCompositionDescription"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#EventCausalityDescription -->
+    <!-- http://gdelt.stream/onto/f/#Composite -->
 
-    <owl:Class rdf:about="#EventCausalityDescription">
-        <rdfs:subClassOf rdf:resource="&DUL;Description"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#Composite">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#EventRole"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
-                <owl:onClass rdf:resource="#Cause"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventCompositionSituation"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isSatisfiedBy"/>
-                <owl:onClass rdf:resource="#EventCausalitySituation"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventCompositionDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://gdelt.stream/onto/f/#Correlate -->
+
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#Correlate">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#EventRole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventCorrelationSituation"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
-                <owl:onClass rdf:resource="#Justification"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventCorrelationDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://gdelt.stream/onto/f/#DescribedEvent -->
+
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#DescribedEvent">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#EventRole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventParticipationSituation"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventParticipationDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://gdelt.stream/onto/f/#Effect -->
+
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#Effect">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#EventRole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventCausalitySituation"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventCausalityDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://gdelt.stream/onto/f/#EventCausalityDescription -->
+
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#EventCausalityDescription">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="#Cause"/>
-                            <rdf:Description rdf:about="#Effect"/>
-                            <rdf:Description rdf:about="#Justification"/>
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#Cause"/>
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#Effect"/>
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#Justification"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -427,88 +394,109 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
-                <owl:onClass rdf:resource="#Effect"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#Cause"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#Effect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#Justification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventCausalitySituation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#EventCausalitySituation -->
+    <!-- http://gdelt.stream/onto/f/#EventCausalitySituation -->
 
-    <owl:Class rdf:about="#EventCausalitySituation">
-        <rdfs:subClassOf rdf:resource="&DUL;Situation"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#EventCausalitySituation">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;satisfies"/>
-                <owl:onClass rdf:resource="#EventCausalityDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;includesEvent"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
-                        <owl:someValuesFrom rdf:resource="#Cause"/>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#Cause"/>
                     </owl:Restriction>
                 </owl:onClass>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;includesObject"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#Effect"/>
+                    </owl:Restriction>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesObject"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&DUL;Description"/>
+                            <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
-                                <owl:someValuesFrom rdf:resource="#Justification"/>
+                                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+                                <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#Justification"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:onClass>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;includesEvent"/>
-                <owl:onClass>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
-                        <owl:someValuesFrom rdf:resource="#Effect"/>
-                    </owl:Restriction>
-                </owl:onClass>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#satisfies"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventCausalityDescription"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#EventCompositionConstraint -->
+    <!-- http://gdelt.stream/onto/f/#EventCompositionConstraint -->
 
-    <owl:Class rdf:about="#EventCompositionConstraint">
-        <rdfs:subClassOf rdf:resource="&DUL;Parameter"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#EventCompositionConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isDefinedIn"/>
-                <owl:allValuesFrom rdf:resource="#EventCompositionDescription"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
+                <owl:allValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventCompositionDescription"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;parametrizes"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes"/>
                 <owl:allValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;hasSetting"/>
-                        <owl:someValuesFrom rdf:resource="#EventCompositionSituation"/>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventCompositionSituation"/>
                     </owl:Restriction>
                 </owl:allValuesFrom>
             </owl:Restriction>
@@ -517,64 +505,86 @@
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#EventCompositionDescription -->
+    <!-- http://gdelt.stream/onto/f/#EventCompositionDescription -->
 
-    <owl:Class rdf:about="#EventCompositionDescription">
-        <rdfs:subClassOf rdf:resource="&DUL;Description"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#EventCompositionDescription">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isSatisfiedBy"/>
-                <owl:onClass rdf:resource="#EventCompositionSituation"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
-                <owl:onClass rdf:resource="#Component"/>
-                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
-                <owl:onClass rdf:resource="#Composite"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="#Component"/>
-                            <rdf:Description rdf:about="#Composite"/>
-                            <rdf:Description rdf:about="#EventCompositionConstraint"/>
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#Component"/>
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#Composite"/>
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#EventCompositionConstraint"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#Component"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#Composite"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventCompositionSituation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#EventCompositionSituation -->
+    <!-- http://gdelt.stream/onto/f/#EventCompositionSituation -->
 
-    <owl:Class rdf:about="#EventCompositionSituation">
-        <rdfs:subClassOf rdf:resource="&DUL;Situation"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#EventCompositionSituation">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;includesEvent"/>
+                <owl:onProperty rdf:resource="http://gdelt.stream/onto/f/#includesSpace"/>
                 <owl:allValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#SpatialConstraint"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gdelt.stream/onto/f/#includesSpaceTime"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#SaptioTemporalConstraint"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="#Component"/>
-                                    <rdf:Description rdf:about="#Composite"/>
+                                    <rdf:Description rdf:about="http://gdelt.stream/onto/f/#Component"/>
+                                    <rdf:Description rdf:about="http://gdelt.stream/onto/f/#Composite"/>
                                 </owl:unionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
@@ -584,60 +594,38 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#includesSpaceTime"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesTime"/>
                 <owl:allValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isParametrizedBy"/>
-                        <owl:someValuesFrom rdf:resource="#SaptioTemporalConstraint"/>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#TemporalConstraint"/>
                     </owl:Restriction>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;includesTime"/>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isParametrizedBy"/>
-                        <owl:someValuesFrom rdf:resource="#TemporalConstraint"/>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="#includesSpace"/>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isParametrizedBy"/>
-                        <owl:someValuesFrom rdf:resource="#SpatialConstraint"/>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;satisfies"/>
-                <owl:onClass rdf:resource="#EventCompositionDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#satisfies"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventCompositionDescription"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#EventCorrelationDescription -->
+    <!-- http://gdelt.stream/onto/f/#EventCorrelationDescription -->
 
-    <owl:Class rdf:about="#EventCorrelationDescription">
-        <rdfs:subClassOf rdf:resource="&DUL;Description"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#EventCorrelationDescription">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="#Correlate"/>
-                            <rdf:Description rdf:about="#Justification"/>
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#Correlate"/>
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#Justification"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -645,85 +633,85 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
-                <owl:onClass rdf:resource="#Correlate"/>
-                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minCardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#Correlate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
-                <owl:onClass rdf:resource="#Justification"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#Justification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isSatisfiedBy"/>
-                <owl:onClass rdf:resource="#EventCorrelationSituation"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventCorrelationSituation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#EventCorrelationSituation -->
+    <!-- http://gdelt.stream/onto/f/#EventCorrelationSituation -->
 
-    <owl:Class rdf:about="#EventCorrelationSituation">
-        <rdfs:subClassOf rdf:resource="&DUL;Situation"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#EventCorrelationSituation">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;satisfies"/>
-                <owl:onClass rdf:resource="#EventCorrelationDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;includesEvent"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
                 <owl:onClass>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
-                        <owl:someValuesFrom rdf:resource="#Correlate"/>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#Correlate"/>
                     </owl:Restriction>
                 </owl:onClass>
-                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;includesObject"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesObject"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&DUL;Description"/>
+                            <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
-                                <owl:someValuesFrom rdf:resource="#Justification"/>
+                                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+                                <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#Justification"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:onClass>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#satisfies"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventCorrelationDescription"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#EventInterpretationDescription -->
+    <!-- http://gdelt.stream/onto/f/#EventInterpretationDescription -->
 
-    <owl:Class rdf:about="#EventInterpretationDescription">
-        <rdfs:subClassOf rdf:resource="&DUL;Description"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#EventInterpretationDescription">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="#Interpretant"/>
-                            <rdf:Description rdf:about="#RelevantSituation"/>
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#Interpretant"/>
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#RelevantSituation"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -731,50 +719,43 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
-                <owl:onClass rdf:resource="#RelevantSituation"/>
-                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#RelevantSituation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
-                <owl:onClass rdf:resource="#Interpretant"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#Interpretant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isSatisfiedBy"/>
-                <owl:onClass rdf:resource="#EventInterpretationSituation"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventInterpretationSituation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#EventInterpretationSituation -->
+    <!-- http://gdelt.stream/onto/f/#EventInterpretationSituation -->
 
-    <owl:Class rdf:about="#EventInterpretationSituation">
-        <rdfs:subClassOf rdf:resource="&DUL;Situation"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#EventInterpretationSituation">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;satisfies"/>
-                <owl:onClass rdf:resource="#EventInterpretationDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;includesObject"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesObject"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&DUL;Situation"/>
+                            <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
-                                <owl:someValuesFrom rdf:resource="#RelevantSituation"/>
+                                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+                                <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#RelevantSituation"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -783,46 +764,39 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;includesEvent"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
-                        <owl:someValuesFrom rdf:resource="#Interpretant"/>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#Interpretant"/>
                     </owl:Restriction>
                 </owl:onClass>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#satisfies"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventInterpretationDescription"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#EventParticipationDescription -->
+    <!-- http://gdelt.stream/onto/f/#EventParticipationDescription -->
 
-    <owl:Class rdf:about="#EventParticipationDescription">
-        <rdfs:subClassOf rdf:resource="&DUL;Description"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#EventParticipationDescription">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
-                <owl:onClass rdf:resource="#Participant"/>
-                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
-                <owl:onClass rdf:resource="#DescribedEvent"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;defines"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="#DescribedEvent"/>
-                            <rdf:Description rdf:about="#Participant"/>
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#DescribedEvent"/>
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#Participant"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -830,116 +804,116 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isSatisfiedBy"/>
-                <owl:onClass rdf:resource="#EventParticipationSituation"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#Participant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#DescribedEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventParticipationSituation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#EventParticipationSituation -->
+    <!-- http://gdelt.stream/onto/f/#EventParticipationSituation -->
 
-    <owl:Class rdf:about="#EventParticipationSituation">
-        <rdfs:subClassOf rdf:resource="&DUL;Situation"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#EventParticipationSituation">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;satisfies"/>
-                <owl:onClass rdf:resource="#EventParticipationDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;includesObject"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
                 <owl:allValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
-                        <owl:someValuesFrom rdf:resource="#Participant"/>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#DescribedEvent"/>
                     </owl:Restriction>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;includesEvent"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesObject"/>
                 <owl:allValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isClassifiedBy"/>
-                        <owl:someValuesFrom rdf:resource="#DescribedEvent"/>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#EventRole -->
-
-    <owl:Class rdf:about="#EventRole">
-        <owl:equivalentClass rdf:resource="&DUL;EventType"/>
-        <rdfs:subClassOf rdf:resource="&DUL;Concept"/>
-    </owl:Class>
-    
-
-
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#Interpretant -->
-
-    <owl:Class rdf:about="#Interpretant">
-        <rdfs:subClassOf rdf:resource="#EventRole"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isEventIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="#EventInterpretationSituation"/>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#Participant"/>
                     </owl:Restriction>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isDefinedIn"/>
-                <owl:onClass rdf:resource="#EventInterpretationDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#satisfies"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventParticipationDescription"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#Justification -->
+    <!-- http://gdelt.stream/onto/f/#EventRole -->
 
-    <owl:Class rdf:about="#Justification">
-        <rdfs:subClassOf rdf:resource="&DUL;Role"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#EventRole">
+        <owl:equivalentClass rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#EventType"/>
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gdelt.stream/onto/f/#Interpretant -->
+
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#Interpretant">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#EventRole"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isDefinedIn"/>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="#EventCausalityDescription"/>
-                            <rdf:Description rdf:about="#EventCorrelationDescription"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:onClass>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventInterpretationSituation"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventInterpretationDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://gdelt.stream/onto/f/#Justification -->
+
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#Justification">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
                 <owl:allValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isObjectIncludedIn"/>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="#EventCausalitySituation"/>
-                                    <rdf:Description rdf:about="#EventCorrelationSituation"/>
+                                    <rdf:Description rdf:about="http://gdelt.stream/onto/f/#EventCausalitySituation"/>
+                                    <rdf:Description rdf:about="http://gdelt.stream/onto/f/#EventCorrelationSituation"/>
                                 </owl:unionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
@@ -947,106 +921,120 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#EventCausalityDescription"/>
+                            <rdf:Description rdf:about="http://gdelt.stream/onto/f/#EventCorrelationDescription"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#Participant -->
+    <!-- http://gdelt.stream/onto/f/#Participant -->
 
-    <owl:Class rdf:about="#Participant">
-        <rdfs:subClassOf rdf:resource="&DUL;Role"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#Participant">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Role"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isDefinedIn"/>
-                <owl:onClass rdf:resource="#EventParticipationDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
                 <owl:allValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&DUL;isObjectIncludedIn"/>
-                        <owl:someValuesFrom rdf:resource="#EventParticipationSituation"/>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventParticipationSituation"/>
                     </owl:Restriction>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#RelevantCausality -->
-
-    <owl:Class rdf:about="#RelevantCausality">
-        <rdfs:subClassOf rdf:resource="#RelevantSituation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
-                <owl:allValuesFrom rdf:resource="#EventCausalitySituation"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventParticipationDescription"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#RelevantComposition -->
+    <!-- http://gdelt.stream/onto/f/#RelevantCausality -->
 
-    <owl:Class rdf:about="#RelevantComposition">
-        <rdfs:subClassOf rdf:resource="#RelevantSituation"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#RelevantCausality">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#RelevantSituation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
-                <owl:allValuesFrom rdf:resource="#EventCompositionSituation"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:allValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventCausalitySituation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#RelevantCorrelation -->
+    <!-- http://gdelt.stream/onto/f/#RelevantComposition -->
 
-    <owl:Class rdf:about="#RelevantCorrelation">
-        <rdfs:subClassOf rdf:resource="#RelevantSituation"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#RelevantComposition">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#RelevantSituation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
-                <owl:allValuesFrom rdf:resource="#EventCorrelationSituation"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:allValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventCompositionSituation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#RelevantParticipation -->
+    <!-- http://gdelt.stream/onto/f/#RelevantCorrelation -->
 
-    <owl:Class rdf:about="#RelevantParticipation">
-        <rdfs:subClassOf rdf:resource="#RelevantSituation"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#RelevantCorrelation">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#RelevantSituation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
-                <owl:allValuesFrom rdf:resource="#EventParticipationSituation"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:allValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventCorrelationSituation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#RelevantSituation -->
+    <!-- http://gdelt.stream/onto/f/#RelevantParticipation -->
 
-    <owl:Class rdf:about="#RelevantSituation">
-        <rdfs:subClassOf rdf:resource="&DUL;Role"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#RelevantParticipation">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#RelevantSituation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;classifies"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:allValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventParticipationSituation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://gdelt.stream/onto/f/#RelevantSituation -->
+
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#RelevantSituation">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&DUL;Situation"/>
+                            <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&DUL;isObjectIncludedIn"/>
-                                <owl:someValuesFrom rdf:resource="#EventInterpretationSituation"/>
+                                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn"/>
+                                <owl:someValuesFrom rdf:resource="http://gdelt.stream/onto/f/#EventInterpretationSituation"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1055,51 +1043,51 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;isDefinedIn"/>
-                <owl:onClass rdf:resource="#EventInterpretationDescription"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gdelt.stream/onto/f/#EventInterpretationDescription"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#SaptioTemporalConstraint -->
+    <!-- http://gdelt.stream/onto/f/#SaptioTemporalConstraint -->
 
-    <owl:Class rdf:about="#SaptioTemporalConstraint">
-        <rdfs:subClassOf rdf:resource="#EventCompositionConstraint"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#SaptioTemporalConstraint">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#EventCompositionConstraint"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;parametrizes"/>
-                <owl:allValuesFrom rdf:resource="&DUL;SpatioTemporalRegion"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes"/>
+                <owl:allValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#SpatialConstraint -->
+    <!-- http://gdelt.stream/onto/f/#SpatialConstraint -->
 
-    <owl:Class rdf:about="#SpatialConstraint">
-        <rdfs:subClassOf rdf:resource="#EventCompositionConstraint"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#SpatialConstraint">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#EventCompositionConstraint"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;parametrizes"/>
-                <owl:allValuesFrom rdf:resource="&DUL;SpaceRegion"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes"/>
+                <owl:allValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://events.semantic-multimedia.org/ontology/2008/12/15/model.owl#TemporalConstraint -->
+    <!-- http://gdelt.stream/onto/f/#TemporalConstraint -->
 
-    <owl:Class rdf:about="#TemporalConstraint">
-        <rdfs:subClassOf rdf:resource="#EventCompositionConstraint"/>
+    <owl:Class rdf:about="http://gdelt.stream/onto/f/#TemporalConstraint">
+        <rdfs:subClassOf rdf:resource="http://gdelt.stream/onto/f/#EventCompositionConstraint"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&DUL;parametrizes"/>
-                <owl:allValuesFrom rdf:resource="&DUL;TimeInterval"/>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes"/>
+                <owl:allValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1108,58 +1096,58 @@
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#Concept -->
 
-    <owl:Class rdf:about="&DUL;Concept"/>
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#Description -->
 
-    <owl:Class rdf:about="&DUL;Description"/>
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#EventType -->
 
-    <owl:Class rdf:about="&DUL;EventType"/>
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#EventType"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#Parameter -->
 
-    <owl:Class rdf:about="&DUL;Parameter"/>
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#Role -->
 
-    <owl:Class rdf:about="&DUL;Role"/>
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Role"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#Situation -->
 
-    <owl:Class rdf:about="&DUL;Situation"/>
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion -->
 
-    <owl:Class rdf:about="&DUL;SpaceRegion"/>
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion -->
 
-    <owl:Class rdf:about="&DUL;SpatioTemporalRegion"/>
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
     
 
 
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval -->
 
-    <owl:Class rdf:about="&DUL;TimeInterval"/>
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 2.2.1.941) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

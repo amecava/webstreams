@@ -8,7 +8,7 @@
 @prefix carml: <http://carml.taxonic.com/carml/> .
 @prefix vocals: <http://w3id.org/rsp/vocals#> .
 @prefix cameo: <http://gdelt.stream/onto/cameo/> .
-@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix sem: <http://gdelt.stream/onto/sem/> .
 
 
 <source>  rml:source [
