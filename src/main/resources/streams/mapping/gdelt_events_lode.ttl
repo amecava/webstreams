@@ -47,7 +47,7 @@
     ];
 
   rr:predicateObjectMap [
-    rr:predicate lode:illustrate;
+    rr:predicate dul:isDescribedBy;
     rr:objectMap [
       rml:reference "SOURCEURL";
       ]

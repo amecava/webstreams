@@ -6,7 +6,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://gdelt.stream/onto/lode/">
-    <Prefix name="" IRI="http://linkedevents.org/ontology/"/>
+    <Prefix name="" IRI="http://gdelt.stream/onto/lode/"/>
+    <Prefix name="DUL" IRI="http://www.loa-cnr.it/ontologies/DUL.owl#"/>
     <Prefix name="dbo" IRI="http://dbpedia.org/ontology/"/>
     <Prefix name="dbp" IRI="http://dbpedia.org/property/"/>
     <Prefix name="dbr" IRI="http://dbpedia.org/resource/"/>
@@ -39,16 +40,16 @@
         <Class abbreviatedIRI="dctype:Event"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
+        <Class abbreviatedIRI="DUL:Agent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
+        <Class abbreviatedIRI="DUL:Event"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
+        <Class abbreviatedIRI="DUL:Object"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Place"/>
+        <Class abbreviatedIRI="DUL:Place"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="wgs84:SpatialThing"/>
@@ -84,13 +85,13 @@
         <ObjectProperty IRI="http://purl.org/NET/c4dm/event.owl#agent"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+        <ObjectProperty abbreviatedIRI="DUL:hasLocation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"/>
+        <ObjectProperty abbreviatedIRI="DUL:hasRegion"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isObservableAt"/>
+        <ObjectProperty abbreviatedIRI="DUL:isObservableAt"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dcterm:format"/>
@@ -119,7 +120,7 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="Event"/>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
+        <Class abbreviatedIRI="DUL:Event"/>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="Event"/>
@@ -127,15 +128,15 @@
     </SubClassOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="atPlace"/>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+        <ObjectProperty abbreviatedIRI="DUL:hasLocation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="atTime"/>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isObservableAt"/>
+        <ObjectProperty abbreviatedIRI="DUL:isObservableAt"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="inSpace"/>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"/>
+        <ObjectProperty abbreviatedIRI="DUL:hasRegion"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="involvedAgent"/>
@@ -181,7 +182,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="atPlace"/>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Place"/>
+        <Class abbreviatedIRI="DUL:Place"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="atTime"/>
@@ -201,11 +202,11 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="involved"/>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
+        <Class abbreviatedIRI="DUL:Object"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="involvedAgent"/>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
+        <Class abbreviatedIRI="DUL:Agent"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

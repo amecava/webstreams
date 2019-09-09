@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://gdelt.stream/onto/sem/"
+     xml:base="http://gdelt.stream/onto/sem"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://gdelt.stream/onto/sem/">
+     ontologyIRI="http://gdelt.stream/onto/sem">
     <Prefix name="" IRI="http://gdelt.stream/onto/sem/"/>
     <Prefix name="cs" IRI="http://www.kulttuurisampo.fi/ebkr/"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="eo" IRI="http://purl.org/NET/c4dm/event.owl#"/>
     <Prefix name="ex" IRI="http://example.org/test/"/>
+    <Prefix name="DUL" IRI="http://www.loa-cnr.it/ontologies/DUL.owl#"/>
     <Prefix name="cyc" IRI="http://sw.opencyc.org/2009/04/07/concept/en/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="sem" IRI="http://semanticweb.cs.vu.nl/2009/11/sem/"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
@@ -29,100 +29,100 @@
     <Prefix name="dctype" IRI="http://purl.org/dc/dcmitype/"/>
     <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
     <Declaration>
-        <Class IRI="Actor"/>
+        <Class IRI="/Actor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ActorType"/>
+        <Class IRI="/ActorType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Authority"/>
+        <Class IRI="/Authority"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Constraint"/>
+        <Class IRI="/Constraint"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Core"/>
+        <Class IRI="/Core"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Event"/>
+        <Class IRI="/Event"/>
     </Declaration>
     <Declaration>
-        <Class IRI="EventType"/>
+        <Class IRI="/EventType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Object"/>
+        <Class IRI="/Object"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Place"/>
+        <Class IRI="/Place"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PlaceType"/>
+        <Class IRI="/PlaceType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Role"/>
+        <Class IRI="/Role"/>
     </Declaration>
     <Declaration>
-        <Class IRI="RoleType"/>
+        <Class IRI="/RoleType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Temporary"/>
+        <Class IRI="/Temporary"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Time"/>
+        <Class IRI="/Time"/>
     </Declaration>
     <Declaration>
-        <Class IRI="TimeType"/>
+        <Class IRI="/TimeType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Type"/>
+        <Class IRI="/Type"/>
     </Declaration>
     <Declaration>
-        <Class IRI="View"/>
+        <Class IRI="/View"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="accordingTo"/>
+        <ObjectProperty IRI="/accordingTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="actorType"/>
+        <ObjectProperty IRI="/actorType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="eventProperty"/>
+        <ObjectProperty IRI="/eventProperty"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="eventType"/>
+        <ObjectProperty IRI="/eventType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasActor"/>
+        <ObjectProperty IRI="/hasActor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasPlace"/>
+        <ObjectProperty IRI="/hasPlace"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasSubEvent"/>
+        <ObjectProperty IRI="/hasSubEvent"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasSubType"/>
+        <ObjectProperty IRI="/hasSubType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasTime"/>
+        <ObjectProperty IRI="/hasTime"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="placeType"/>
+        <ObjectProperty IRI="/placeType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="roleType"/>
+        <ObjectProperty IRI="/roleType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="subEventOf"/>
+        <ObjectProperty IRI="/subEventOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="subTypeOf"/>
+        <ObjectProperty IRI="/subTypeOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="timeType"/>
+        <ObjectProperty IRI="/timeType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="type"/>
+        <ObjectProperty IRI="/type"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="rdf:type"/>
@@ -131,25 +131,25 @@
         <ObjectProperty abbreviatedIRI="rdfs:subClassOf"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="sem:hasBeginTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="sem:hasEarliestBeginTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestBeginTimeStamp"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="sem:hasEarliestEndTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestEndTimeStamp"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="sem:hasEndTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="sem:hasLatestBeginTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="sem:hasLatestEndTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestEndTimeStamp"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="sem:hasTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:broadMatch"/>
@@ -167,526 +167,526 @@
         <AnnotationProperty abbreviatedIRI="skos:relatedMatch"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="Actor"/>
-        <Class IRI="Authority"/>
+        <Class IRI="/Actor"/>
+        <Class IRI="/Authority"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Actor"/>
-        <Class IRI="Core"/>
+        <Class IRI="/Actor"/>
+        <Class IRI="/Core"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="ActorType"/>
-        <Class IRI="Type"/>
+        <Class IRI="/ActorType"/>
+        <Class IRI="/Type"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Event"/>
-        <Class IRI="Core"/>
+        <Class IRI="/Event"/>
+        <Class IRI="/Core"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="EventType"/>
-        <Class IRI="Type"/>
+        <Class IRI="/EventType"/>
+        <Class IRI="/Type"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Object"/>
-        <Class IRI="Actor"/>
+        <Class IRI="/Object"/>
+        <Class IRI="/Actor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Place"/>
-        <Class IRI="Core"/>
+        <Class IRI="/Place"/>
+        <Class IRI="/Core"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="PlaceType"/>
-        <Class IRI="Type"/>
+        <Class IRI="/PlaceType"/>
+        <Class IRI="/Type"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Role"/>
-        <Class IRI="Constraint"/>
+        <Class IRI="/Role"/>
+        <Class IRI="/Constraint"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="RoleType"/>
-        <Class IRI="Type"/>
+        <Class IRI="/RoleType"/>
+        <Class IRI="/Type"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Temporary"/>
-        <Class IRI="Constraint"/>
+        <Class IRI="/Temporary"/>
+        <Class IRI="/Constraint"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Time"/>
-        <Class IRI="Core"/>
+        <Class IRI="/Time"/>
+        <Class IRI="/Core"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="TimeType"/>
-        <Class IRI="Type"/>
+        <Class IRI="/TimeType"/>
+        <Class IRI="/Type"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="View"/>
-        <Class IRI="Constraint"/>
+        <Class IRI="/View"/>
+        <Class IRI="/Constraint"/>
     </SubClassOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="actorType"/>
-        <ObjectProperty IRI="type"/>
+        <ObjectProperty IRI="/actorType"/>
+        <ObjectProperty IRI="/type"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="eventType"/>
-        <ObjectProperty IRI="type"/>
+        <ObjectProperty IRI="/eventType"/>
+        <ObjectProperty IRI="/type"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasActor"/>
-        <ObjectProperty IRI="eventProperty"/>
+        <ObjectProperty IRI="/hasActor"/>
+        <ObjectProperty IRI="/eventProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasPlace"/>
-        <ObjectProperty IRI="eventProperty"/>
+        <ObjectProperty IRI="/hasPlace"/>
+        <ObjectProperty IRI="/eventProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasSubEvent"/>
-        <ObjectProperty IRI="eventProperty"/>
+        <ObjectProperty IRI="/hasSubEvent"/>
+        <ObjectProperty IRI="/eventProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasTime"/>
-        <ObjectProperty IRI="eventProperty"/>
+        <ObjectProperty IRI="/hasTime"/>
+        <ObjectProperty IRI="/eventProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="placeType"/>
-        <ObjectProperty IRI="type"/>
+        <ObjectProperty IRI="/placeType"/>
+        <ObjectProperty IRI="/type"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="roleType"/>
-        <ObjectProperty IRI="type"/>
+        <ObjectProperty IRI="/roleType"/>
+        <ObjectProperty IRI="/type"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="subTypeOf"/>
+        <ObjectProperty IRI="/subTypeOf"/>
         <ObjectProperty abbreviatedIRI="rdfs:subClassOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="timeType"/>
-        <ObjectProperty IRI="type"/>
+        <ObjectProperty IRI="/timeType"/>
+        <ObjectProperty IRI="/type"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="type"/>
+        <ObjectProperty IRI="/type"/>
         <ObjectProperty abbreviatedIRI="rdf:type"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasSubEvent"/>
-        <ObjectProperty IRI="subEventOf"/>
+        <ObjectProperty IRI="/hasSubEvent"/>
+        <ObjectProperty IRI="/subEventOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasSubType"/>
-        <ObjectProperty IRI="subTypeOf"/>
+        <ObjectProperty IRI="/hasSubType"/>
+        <ObjectProperty IRI="/subTypeOf"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="accordingTo"/>
-        <Class IRI="View"/>
+        <ObjectProperty IRI="/accordingTo"/>
+        <Class IRI="/View"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="actorType"/>
-        <Class IRI="Actor"/>
+        <ObjectProperty IRI="/actorType"/>
+        <Class IRI="/Actor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="eventType"/>
-        <Class IRI="Event"/>
+        <ObjectProperty IRI="/eventType"/>
+        <Class IRI="/Event"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasSubEvent"/>
-        <Class IRI="Event"/>
+        <ObjectProperty IRI="/hasSubEvent"/>
+        <Class IRI="/Event"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasSubType"/>
-        <Class IRI="Type"/>
+        <ObjectProperty IRI="/hasSubType"/>
+        <Class IRI="/Type"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="placeType"/>
-        <Class IRI="Place"/>
+        <ObjectProperty IRI="/placeType"/>
+        <Class IRI="/Place"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="roleType"/>
-        <Class IRI="Role"/>
+        <ObjectProperty IRI="/roleType"/>
+        <Class IRI="/Role"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="timeType"/>
-        <Class IRI="Time"/>
+        <ObjectProperty IRI="/timeType"/>
+        <Class IRI="/Time"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="accordingTo"/>
-        <Class IRI="Authority"/>
+        <ObjectProperty IRI="/accordingTo"/>
+        <Class IRI="/Authority"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="actorType"/>
-        <Class IRI="ActorType"/>
+        <ObjectProperty IRI="/actorType"/>
+        <Class IRI="/ActorType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="eventType"/>
-        <Class IRI="EventType"/>
+        <ObjectProperty IRI="/eventType"/>
+        <Class IRI="/EventType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasActor"/>
-        <Class IRI="Actor"/>
+        <ObjectProperty IRI="/hasActor"/>
+        <Class IRI="/Actor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasPlace"/>
-        <Class IRI="Place"/>
+        <ObjectProperty IRI="/hasPlace"/>
+        <Class IRI="/Place"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasSubEvent"/>
-        <Class IRI="Event"/>
+        <ObjectProperty IRI="/hasSubEvent"/>
+        <Class IRI="/Event"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasSubType"/>
-        <Class IRI="Type"/>
+        <ObjectProperty IRI="/hasSubType"/>
+        <Class IRI="/Type"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasTime"/>
-        <Class IRI="Time"/>
+        <ObjectProperty IRI="/hasTime"/>
+        <Class IRI="/Time"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="placeType"/>
-        <Class IRI="PlaceType"/>
+        <ObjectProperty IRI="/placeType"/>
+        <Class IRI="/PlaceType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="roleType"/>
-        <Class IRI="RoleType"/>
+        <ObjectProperty IRI="/roleType"/>
+        <Class IRI="/RoleType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="timeType"/>
-        <Class IRI="TimeType"/>
+        <ObjectProperty IRI="/timeType"/>
+        <Class IRI="/TimeType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="type"/>
-        <Class IRI="Type"/>
+        <ObjectProperty IRI="/type"/>
+        <Class IRI="/Type"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
-        <DataProperty abbreviatedIRI="sem:hasBeginTimeStamp"/>
-        <DataProperty abbreviatedIRI="sem:hasTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty abbreviatedIRI="sem:hasEarliestBeginTimeStamp"/>
-        <DataProperty abbreviatedIRI="sem:hasBeginTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestBeginTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty abbreviatedIRI="sem:hasEarliestEndTimeStamp"/>
-        <DataProperty abbreviatedIRI="sem:hasEndTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestEndTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty abbreviatedIRI="sem:hasEndTimeStamp"/>
-        <DataProperty abbreviatedIRI="sem:hasTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty abbreviatedIRI="sem:hasLatestBeginTimeStamp"/>
-        <DataProperty abbreviatedIRI="sem:hasBeginTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty abbreviatedIRI="sem:hasLatestEndTimeStamp"/>
-        <DataProperty abbreviatedIRI="sem:hasEndTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestEndTimeStamp"/>
+        <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp"/>
     </SubDataPropertyOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Actor</IRI>
+        <IRI>/Actor</IRI>
         <Literal>Actors are entities that take part in an Event, either actively or passively. Actors do not necessarily have to be sentient. They can also be objects. Actors are a thing, animate or inanimate, physical or non-physical.
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Actor</IRI>
+        <IRI>/Actor</IRI>
         <Literal>Actor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>ActorType</IRI>
+        <IRI>/ActorType</IRI>
         <Literal>EventType contains all resources that are used to classify Actors, e.g. person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>ActorType</IRI>
+        <IRI>/ActorType</IRI>
         <Literal>Actor type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Authority</IRI>
+        <IRI>/Authority</IRI>
         <Literal>Authorities are entities that state SEM properties. Their nature is not specified. They can symbolize people, organizations, sources of information, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Authority</IRI>
+        <IRI>/Authority</IRI>
         <Literal>Authority</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Constraint</IRI>
+        <IRI>/Constraint</IRI>
         <Literal>The SEM Constraint class contains instances of properties that have a constrained (i.e. not universal) validity. This includes time dependent validity (Temporary), validity in the guise of a specific role (Role), or validity according to a given Authority (View).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Constraint</IRI>
+        <IRI>/Constraint</IRI>
         <Literal>Constraint</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Core</IRI>
+        <IRI>/Core</IRI>
         <Literal>The SEM Core class contains all entities that make up the context of an event: Events, Actors, Places, Times. This class is meant to be extended for each application domain.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Core</IRI>
+        <IRI>/Core</IRI>
         <Literal>Core</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Event</IRI>
+        <IRI>/Event</IRI>
         <Literal>Events are things that happen. This comprises everything from historical events to web site sessions and mythical journeys. Event is the central class of SEM.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Event</IRI>
+        <IRI>/Event</IRI>
         <Literal>Event</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>EventType</IRI>
+        <IRI>/EventType</IRI>
         <Literal>EventType contains all resources that are used to classify Events, e.g. meeting.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>EventType</IRI>
+        <IRI>/EventType</IRI>
         <Literal>Event type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Object</IRI>
+        <IRI>/Object</IRI>
         <Literal>Objects are passive, inanimate Actors.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Object</IRI>
+        <IRI>/Object</IRI>
         <Literal>Object</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Place</IRI>
+        <IRI>/Place</IRI>
         <Literal>Places are locations where an Event happens. They do not need to be physical places and hence do not necessarily need coordinates. Neither do they need to have any significance apart from them being the location of an Event.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Place</IRI>
+        <IRI>/Place</IRI>
         <Literal>Place</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>PlaceType</IRI>
+        <IRI>/PlaceType</IRI>
         <Literal>EventType contains all resources that are used to classify Places, e.g. river.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>PlaceType</IRI>
+        <IRI>/PlaceType</IRI>
         <Literal>Place type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Role</IRI>
+        <IRI>/Role</IRI>
         <Literal>Roles are properties with a subspecified function or position indicated by a RoleType in the scope of an Event. For example, the sem:hasActor property can be subspecified with the RoleType attacker, to denote that the type of participation of the Actor in the scope of the Event is &quot;attacker&quot;. The sem:hasPlace property can be subspecified with the RoleType origin, to denote that within the scope of the Event it is the origin.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Role</IRI>
+        <IRI>/Role</IRI>
         <Literal>Role</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>RoleType</IRI>
+        <IRI>/RoleType</IRI>
         <Literal>EventType contains all resources that are used to classify Roles, e.g. receiver.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>RoleType</IRI>
+        <IRI>/RoleType</IRI>
         <Literal>Role type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Temporary</IRI>
+        <IRI>/Temporary</IRI>
         <Literal>Temporaries are properties that only hold during a certain Time, which is either indicated with the sem:hasTime property to an instance of sem:Time, or with the sem:hasTimeStamp property to some timestamp(s).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Temporary</IRI>
+        <IRI>/Temporary</IRI>
         <Literal>Temporary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Time</IRI>
+        <IRI>/Time</IRI>
         <Literal>Time contains symbolic representations of when an Event took place. Time instances do not necessarily need to have a timestamp associated with them. The Time class exists to represent semantics of time, e.g. that one thing happens before another, even though the exact timestamps are unknown.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Time</IRI>
+        <IRI>/Time</IRI>
         <Literal>Time</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>TimeType</IRI>
+        <IRI>/TimeType</IRI>
         <Literal>EventType contains all resources that are used to classify Time, e.g. century.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>TimeType</IRI>
+        <IRI>/TimeType</IRI>
         <Literal>Time type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Type</IRI>
+        <IRI>/Type</IRI>
         <Literal>The SEM Type class contains all types of Core instances. These can be either individuals of classes themselves. This class is meant to be extended for each application domain.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Type</IRI>
+        <IRI>/Type</IRI>
         <Literal>Type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>View</IRI>
+        <IRI>/View</IRI>
         <Literal>Views are properties that only hold according to a certain Authority.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>View</IRI>
+        <IRI>/View</IRI>
         <Literal>View</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>accordingTo</IRI>
+        <IRI>/accordingTo</IRI>
         <Literal>According to is used to state which Authority sais that a property constrained by the View Constraint is true.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>accordingTo</IRI>
+        <IRI>/accordingTo</IRI>
         <Literal>accordingTo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>actorType</IRI>
+        <IRI>/actorType</IRI>
         <Literal>Has actor type is used to assign a type to an actor.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>actorType</IRI>
+        <IRI>/actorType</IRI>
         <Literal>actorType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>eventProperty</IRI>
+        <IRI>/eventProperty</IRI>
         <Literal>Event properties connect Events to other SEM Core entities.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>eventProperty</IRI>
+        <IRI>/eventProperty</IRI>
         <Literal>event property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>eventType</IRI>
+        <IRI>/eventType</IRI>
         <Literal>Has event type is used to assign a type to an event.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>eventType</IRI>
+        <IRI>/eventType</IRI>
         <Literal>eventType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>hasActor</IRI>
+        <IRI>/hasActor</IRI>
         <Literal>Has actor is used to state which Actors or Objects participate in an Event.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>hasActor</IRI>
+        <IRI>/hasActor</IRI>
         <Literal>hasActor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>hasPlace</IRI>
+        <IRI>/hasPlace</IRI>
         <Literal>hasPlace</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>hasSubEvent</IRI>
+        <IRI>/hasSubEvent</IRI>
         <Literal>Has subevent connects an Event to other Events that belong to it. This is a very generic property that does not mean the subevents fully define the superconcept or that there is any causal relationship.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>hasSubEvent</IRI>
+        <IRI>/hasSubEvent</IRI>
         <Literal>hasSubevent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>hasSubType</IRI>
+        <IRI>/hasSubType</IRI>
         <Literal>Has sub type is used to state that a type falls under another type. This is a generic aggregation relation that is used to generalize over various hierarchical relations that can exist between types.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>hasSubType</IRI>
+        <IRI>/hasSubType</IRI>
         <Literal>has subtype</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>hasTime</IRI>
+        <IRI>/hasTime</IRI>
         <Literal>hasTime</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>placeType</IRI>
+        <IRI>/placeType</IRI>
         <Literal>Has place type is used to assign a type to a place.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>placeType</IRI>
+        <IRI>/placeType</IRI>
         <Literal>placeType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>roleType</IRI>
+        <IRI>/roleType</IRI>
         <Literal>Has role type is used to assign a role type to a Role property constraint. This role is a subspecification of the eventProperty which it constrains. For example, if an Event hasActor an Actor and this property is given a Role Constraint, then roleType can be used to assign a role to the participation of the Actor in the Event indicated by hasActor.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>roleType</IRI>
+        <IRI>/roleType</IRI>
         <Literal>roleType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>subEventOf</IRI>
+        <IRI>/subEventOf</IRI>
         <Literal>Inverse property of hasSubEvent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>subEventOf</IRI>
+        <IRI>/subEventOf</IRI>
         <Literal>subevent of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>subTypeOf</IRI>
+        <IRI>/subTypeOf</IRI>
         <Literal>The inverse property of hasSubType.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>subTypeOf</IRI>
+        <IRI>/subTypeOf</IRI>
         <Literal>subTypeOf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>timeType</IRI>
+        <IRI>/timeType</IRI>
         <Literal>Has time type is used to assign a type to a time individual.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>timeType</IRI>
+        <IRI>/timeType</IRI>
         <Literal>timeType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>type</IRI>
+        <IRI>/type</IRI>
         <Literal>Type is the super property of the properties that are used to indicate the type of a Core instance, eventType, actorType, placeType, timeType; and of roleType. Types can be both classes and individuals, cf. OWL 2 punning.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>type</IRI>
+        <IRI>/type</IRI>
         <Literal>type property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -766,77 +766,77 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>sem:hasBeginTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp</IRI>
         <Literal>Has begin timestamp is used to indicate the beginning of a time interval. Omitting the hasBeginTimeStamp while stating a hasEndTimeStamp is interpreted as an open ended interval.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>sem:hasBeginTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp</IRI>
         <Literal>has begin timestamp</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>sem:hasEarliestBeginTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestBeginTimeStamp</IRI>
         <Literal>Has earliest begin timestamp is used to indicate the earliest possible starting time of an uncertain time interval.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>sem:hasEarliestBeginTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestBeginTimeStamp</IRI>
         <Literal>has earliest begin timestamp</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>sem:hasEarliestEndTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestEndTimeStamp</IRI>
         <Literal>Has earliest end timestamp is used to indicate the earliest possible ending time of an uncertain time interval.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>sem:hasEarliestEndTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestEndTimeStamp</IRI>
         <Literal>has earliest end timestamp</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>sem:hasEndTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp</IRI>
         <Literal>Has end timestamp is used to indicate the end of a time interval. Omitting the hasEndTimeStamp while stating a hasBeginTimeStamp is interpreted as an open ended interval.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>sem:hasEndTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp</IRI>
         <Literal>has end timestamp</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>sem:hasLatestBeginTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp</IRI>
         <Literal>Has latest begin timestamp is used to indicate the latest possible starting time of an uncertain time interval.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>sem:hasLatestBeginTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp</IRI>
         <Literal>has latest begin timestamp</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>sem:hasLatestEndTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestEndTimeStamp</IRI>
         <Literal>Has latest end timestamp is used to indicate the latest possible ending time of an uncertain time interval.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>sem:hasLatestEndTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestEndTimeStamp</IRI>
         <Literal>has latest end timestamp</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>sem:hasTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp</IRI>
         <Literal>Has timestamp is used to put time indicators on any individual. It is the most common way to state when an Event took place. There are subproperties of hasTimeStamp to represent time intervals and uncertain time intervals. If the exact moment is not known, but it is necessary to specify a certain time, use hasTime instead. All of these properties are also used to indicate the time at which a property under the Temporary Constraint is valid.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>sem:hasTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp</IRI>
         <Literal>hasTimestamp</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:closeMatch"/>
-        <AbbreviatedIRI>sem:hasTimeStamp</AbbreviatedIRI>
+        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp</IRI>
         <AbbreviatedIRI>cs:time</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>

@@ -128,6 +128,7 @@ public class GDELTWebSocketHandler implements Runnable {
             System.out.println("INFO: Sending " + mappingfile_path);
             Thread.sleep(delay);
             session.sendString(s);
+            //todo save s to file
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (IOException e) {
