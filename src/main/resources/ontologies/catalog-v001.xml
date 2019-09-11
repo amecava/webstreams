@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1568097377504" name="http://gdelt.org/cameo/" uri="cameo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568097377504" name="http://gdelt.org/vocab/" uri="gdelt.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568097377504" name="http://gdelt.stream/onto/f" uri="F.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568097377504" name="http://gdelt.stream/onto/lode/" uri="LODE.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568097377504" name="http://gdelt.stream/onto/sem" uri="SEM.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568097377504" name="http://www.wikimediaonto.org" uri="wikimedia.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568097377504" name="shadowed:http://gdelt.stream/onto/f" uri="Documentation/fDocumentation/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1568097377504" name="shadowed:http://gdelt.stream/onto/lode/" uri="Documentation/lodeDocumentation/doc/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1568097377504" name="shadowed:http://gdelt.stream/onto/sem" uri="Documentation/semDocumentation/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1568097377504" name="urn:absolute:www.gdelt.org/gcam" uri="gcam.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568158471298" name="http://gdelt.org/cameo/" uri="cameo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568158471298" name="http://gdelt.org/vocab/" uri="gdelt.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568158471298" name="http://gdelt.stream/onto/f" uri="F.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568158471298" name="http://gdelt.stream/onto/lode/" uri="LODE.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568158471298" name="http://gdelt.stream/onto/sem" uri="SEM.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568158471298" name="http://www.wikimediaonto.org" uri="wikimedia.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568158471298" name="urn:absolute:www.gdelt.org/gcam" uri="gcam.owl"/>
     </group>
 </catalog>

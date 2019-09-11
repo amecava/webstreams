@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://gdelt.stream/onto/sem">
-    <Prefix name="" IRI="http://gdelt.stream/onto/sem/"/>
+    <Prefix name="" IRI="http://gdelt.stream/onto/sem"/>
     <Prefix name="cs" IRI="http://www.kulttuurisampo.fi/ebkr/"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="eo" IRI="http://purl.org/NET/c4dm/event.owl#"/>
@@ -150,21 +150,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:broadMatch"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:closeMatch"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:narrowMatch"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:relatedMatch"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="/Actor"/>
@@ -833,11 +818,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp</IRI>
         <Literal>hasTimestamp</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:closeMatch"/>
-        <IRI>http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp</IRI>
-        <AbbreviatedIRI>cs:time</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>

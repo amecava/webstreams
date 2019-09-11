@@ -103,9 +103,6 @@
         <AnnotationProperty abbreviatedIRI="rdf:value"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
     </Declaration>
     <Declaration>
@@ -232,13 +229,6 @@ to distinguish events from processes or states.</Literal>
         <Literal xml:lang="en">Event</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <IRI>Event</IRI>
-        <Literal xml:lang="en">
-&quot;Something that happened,&quot; as might be reported in a news article or
-explained by a historian.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>atPlace</IRI>
         <Literal xml:lang="en">
@@ -252,13 +242,6 @@ place.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>atPlace</IRI>
         <Literal xml:lang="en">at place</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <IRI>atPlace</IRI>
-        <Literal xml:lang="en">
-a named or relatively specified place that is where
-an event happened.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -283,13 +266,6 @@ such span of time.</Literal>
         <Literal xml:lang="en">at time</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <IRI>atTime</IRI>
-        <Literal xml:lang="en">
-an abstract instant or interval of
-time that is when an event happened.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>circa</IRI>
         <Literal xml:lang="en">
@@ -309,13 +285,6 @@ of the former.</Literal>
         <Literal xml:lang="en">circa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <IRI>circa</IRI>
-        <Literal xml:lang="en">
-an interval of time that can be
-precisely described using calendar dates and clock times.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>illustrate</IRI>
         <Literal xml:lang="en">
@@ -326,12 +295,6 @@ illustrates, documents or comments upon.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>illustrate</IRI>
         <Literal xml:lang="en">illustrate</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <IRI>illustrate</IRI>
-        <Literal xml:lang="en">
-an event illustrated by some thing (typically a media object)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -356,13 +319,6 @@ one such region of space.</Literal>
         <Literal xml:lang="en">in space</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <IRI>inSpace</IRI>
-        <Literal xml:lang="en">
-an abstract region of space (e.g. a
-geospatial point or region) that is where an event happened.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>involved</IRI>
         <Literal xml:lang="en">
@@ -375,13 +331,6 @@ creation, destruction, etc.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>involved</IRI>
         <Literal xml:lang="en">involved</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <IRI>involved</IRI>
-        <Literal xml:lang="en">
-a (physical, social, or mental) object involved in
-an event.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -398,68 +347,63 @@ intentionality, etc.</Literal>
         <Literal xml:lang="en">involved agent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <IRI>involvedAgent</IRI>
-        <Literal xml:lang="en">an agent involved in an event.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dcterm:format"/>
         <IRI>http://linkedevents.org/ontology/html/</IRI>
-        <AnonymousIndividual nodeID="_:genid2147483648"/>
+        <AnonymousIndividual nodeID="_:genid2147483783"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dcterm:format"/>
         <IRI>http://linkedevents.org/ontology/rdfxml/</IRI>
-        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483784"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdf:value"/>
-        <AnonymousIndividual nodeID="_:genid2147483648"/>
+        <AnonymousIndividual nodeID="_:genid2147483783"/>
         <Literal>text/html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AnonymousIndividual nodeID="_:genid2147483648"/>
+        <AnonymousIndividual nodeID="_:genid2147483783"/>
         <Literal xml:lang="en">HTML</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdf:value"/>
-        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483784"/>
         <Literal>application/rdf+xml</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483784"/>
         <Literal xml:lang="en">RDF/XML</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
-        <AnonymousIndividual nodeID="_:genid2147483650"/>
+        <AnonymousIndividual nodeID="_:genid2147483785"/>
         <IRI>http://www.cwi.nl/~troncy/</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483650"/>
+        <AnonymousIndividual nodeID="_:genid2147483785"/>
         <Literal>Raphaël Troncy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
-        <AnonymousIndividual nodeID="_:genid2147483651"/>
+        <AnonymousIndividual nodeID="_:genid2147483786"/>
         <IRI>http://www.cwi.nl/~lynda/</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483651"/>
+        <AnonymousIndividual nodeID="_:genid2147483786"/>
         <Literal>Lynda Hardman</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
-        <AnonymousIndividual nodeID="_:genid2147483652"/>
+        <AnonymousIndividual nodeID="_:genid2147483787"/>
         <IRI>http://aeshin.org/</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483652"/>
+        <AnonymousIndividual nodeID="_:genid2147483787"/>
         <Literal>Ryan Shaw</Literal>
     </AnnotationAssertion>
 </Ontology>
