@@ -1,0 +1,754 @@
+@prefix : <http://gdelt.stream/onto/f#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://gdelt.stream/onto/f> .
+
+<http://gdelt.stream/onto/f> rdf:type owl:Ontology ;
+                              owl:imports <http://www.loa-cnr.it/ontologies/DUL.owl> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://gdelt.stream/onto/f#hasEventParticipant
+:hasEventParticipant rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant> ;
+                     owl:inverseOf :isEventParticipant ;
+                     rdfs:domain [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                   owl:someValuesFrom :DescribedEvent
+                                 ] ;
+                     rdfs:range [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                  owl:someValuesFrom :Participant
+                                ] .
+
+
+###  http://gdelt.stream/onto/f#includesSpace
+:includesSpace rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor> ;
+               owl:inverseOf :isSpaceIncludedIn .
+
+
+###  http://gdelt.stream/onto/f#includesSpaceTime
+:includesSpaceTime rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor> ;
+                   owl:inverseOf :isSpaceTimeIncludedIn .
+
+
+###  http://gdelt.stream/onto/f#isEventParticipant
+:isEventParticipant rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn> ;
+                    rdfs:domain [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                  owl:someValuesFrom :Participant
+                                ] ;
+                    rdfs:range [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                 owl:someValuesFrom :DescribedEvent
+                               ] .
+
+
+###  http://gdelt.stream/onto/f#isSpaceIncludedIn
+:isSpaceIncludedIn rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting> ;
+                   rdfs:domain <http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion> ;
+                   rdfs:range <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> .
+
+
+###  http://gdelt.stream/onto/f#isSpaceTimeIncludedIn
+:isSpaceTimeIncludedIn rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting> ;
+                       rdfs:domain <http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion> ;
+                       rdfs:range <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#classifies
+<http://www.loa-cnr.it/ontologies/DUL.owl#classifies> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#defines
+<http://www.loa-cnr.it/ontologies/DUL.owl#defines> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant
+<http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting
+<http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent
+<http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#includesObject
+<http://www.loa-cnr.it/ontologies/DUL.owl#includesObject> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#includesTime
+<http://www.loa-cnr.it/ontologies/DUL.owl#includesTime> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy
+<http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn
+<http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn
+<http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn
+<http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy
+<http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn
+<http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy
+<http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor
+<http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes
+<http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes> rdf:type owl:ObjectProperty .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#satisfies
+<http://www.loa-cnr.it/ontologies/DUL.owl#satisfies> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://gdelt.stream/onto/f#Cause
+:Cause rdf:type owl:Class ;
+       rdfs:subClassOf :EventRole ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                         owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> ;
+                                             owl:someValuesFrom :EventCausalitySituation
+                                           ]
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :EventCausalityDescription
+                       ] .
+
+
+###  http://gdelt.stream/onto/f#Component
+:Component rdf:type owl:Class ;
+           rdfs:subClassOf :EventRole ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                             owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> ;
+                                                 owl:someValuesFrom :EventCompositionSituation
+                                               ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :EventCompositionDescription
+                           ] .
+
+
+###  http://gdelt.stream/onto/f#Composite
+:Composite rdf:type owl:Class ;
+           rdfs:subClassOf :EventRole ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                             owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> ;
+                                                 owl:someValuesFrom :EventCompositionSituation
+                                               ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :EventCompositionDescription
+                           ] .
+
+
+###  http://gdelt.stream/onto/f#Correlate
+:Correlate rdf:type owl:Class ;
+           rdfs:subClassOf :EventRole ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                             owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> ;
+                                                 owl:someValuesFrom :EventCorrelationSituation
+                                               ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :EventCorrelationDescription
+                           ] .
+
+
+###  http://gdelt.stream/onto/f#DescribedEvent
+:DescribedEvent rdf:type owl:Class ;
+                rdfs:subClassOf :EventRole ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                                  owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> ;
+                                                      owl:someValuesFrom :EventParticipationSituation
+                                                    ]
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :EventParticipationDescription
+                                ] .
+
+
+###  http://gdelt.stream/onto/f#Effect
+:Effect rdf:type owl:Class ;
+        rdfs:subClassOf :EventRole ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                          owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> ;
+                                              owl:someValuesFrom :EventCausalitySituation
+                                            ]
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :EventCausalityDescription
+                        ] .
+
+
+###  http://gdelt.stream/onto/f#EventCausalityDescription
+:EventCausalityDescription rdf:type owl:Class ;
+                           rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Description> ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                             owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                 owl:unionOf ( :Cause
+                                                                               :Effect
+                                                                               :Justification
+                                                                             )
+                                                               ]
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :Cause
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :Effect
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :Justification
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy> ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :EventCausalitySituation
+                                           ] .
+
+
+###  http://gdelt.stream/onto/f#EventCausalitySituation
+:EventCausalitySituation rdf:type owl:Class ;
+                         rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> ;
+                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onClass [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                                         owl:someValuesFrom :Cause
+                                                       ]
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> ;
+                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onClass [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                                         owl:someValuesFrom :Effect
+                                                       ]
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#includesObject> ;
+                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onClass [ owl:intersectionOf ( <http://www.loa-cnr.it/ontologies/DUL.owl#Description>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                                                                owl:someValuesFrom :Justification
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#satisfies> ;
+                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onClass :EventCausalityDescription
+                                         ] .
+
+
+###  http://gdelt.stream/onto/f#EventCompositionConstraint
+:EventCompositionConstraint rdf:type owl:Class ;
+                            rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Parameter> ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> ;
+                                              owl:allValuesFrom :EventCompositionDescription
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes> ;
+                                              owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting> ;
+                                                                  owl:someValuesFrom :EventCompositionSituation
+                                                                ]
+                                            ] .
+
+
+###  http://gdelt.stream/onto/f#EventCompositionDescription
+:EventCompositionDescription rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Description> ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                   owl:unionOf ( :Component
+                                                                                 :Composite
+                                                                                 :EventCompositionConstraint
+                                                                               )
+                                                                 ]
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass :Component
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass :Composite
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass :EventCompositionSituation
+                                             ] .
+
+
+###  http://gdelt.stream/onto/f#EventCompositionSituation
+:EventCompositionSituation rdf:type owl:Class ;
+                           rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :includesSpace ;
+                                             owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy> ;
+                                                                 owl:someValuesFrom :SpatialConstraint
+                                                               ]
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :includesSpaceTime ;
+                                             owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy> ;
+                                                                 owl:someValuesFrom :SaptioTemporalConstraint
+                                                               ]
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> ;
+                                             owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                                                 owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                      owl:unionOf ( :Component
+                                                                                                    :Composite
+                                                                                                  )
+                                                                                    ]
+                                                               ]
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#includesTime> ;
+                                             owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy> ;
+                                                                 owl:someValuesFrom :TemporalConstraint
+                                                               ]
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#satisfies> ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :EventCompositionDescription
+                                           ] .
+
+
+###  http://gdelt.stream/onto/f#EventCorrelationDescription
+:EventCorrelationDescription rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Description> ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                   owl:unionOf ( :Correlate
+                                                                                 :Justification
+                                                                               )
+                                                                 ]
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                               owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                               owl:onClass :Correlate
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass :Justification
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass :EventCorrelationSituation
+                                             ] .
+
+
+###  http://gdelt.stream/onto/f#EventCorrelationSituation
+:EventCorrelationSituation rdf:type owl:Class ;
+                           rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> ;
+                                             owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                             owl:onClass [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                                           owl:someValuesFrom :Correlate
+                                                         ]
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#includesObject> ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass [ owl:intersectionOf ( <http://www.loa-cnr.it/ontologies/DUL.owl#Description>
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                                                                  owl:someValuesFrom :Justification
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ]
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#satisfies> ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :EventCorrelationDescription
+                                           ] .
+
+
+###  http://gdelt.stream/onto/f#EventInterpretationDescription
+:EventInterpretationDescription rdf:type owl:Class ;
+                                rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Description> ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                                  owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                      owl:unionOf ( :Interpretant
+                                                                                    :RelevantSituation
+                                                                                  )
+                                                                    ]
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass :RelevantSituation
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass :Interpretant
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy> ;
+                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass :EventInterpretationSituation
+                                                ] .
+
+
+###  http://gdelt.stream/onto/f#EventInterpretationSituation
+:EventInterpretationSituation rdf:type owl:Class ;
+                              rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#includesObject> ;
+                                                owl:allValuesFrom [ owl:intersectionOf ( <http://www.loa-cnr.it/ontologies/DUL.owl#Situation>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                                                                           owl:someValuesFrom :RelevantSituation
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ]
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> ;
+                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onClass [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                                              owl:someValuesFrom :Interpretant
+                                                            ]
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#satisfies> ;
+                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onClass :EventInterpretationDescription
+                                              ] .
+
+
+###  http://gdelt.stream/onto/f#EventParticipationDescription
+:EventParticipationDescription rdf:type owl:Class ;
+                               rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Description> ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                                 owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                     owl:unionOf ( :DescribedEvent
+                                                                                   :Participant
+                                                                                 )
+                                                                   ]
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass :Participant
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#defines> ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass :DescribedEvent
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy> ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass :EventParticipationSituation
+                                               ] .
+
+
+###  http://gdelt.stream/onto/f#EventParticipationSituation
+:EventParticipationSituation rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> ;
+                                               owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                                                   owl:someValuesFrom :DescribedEvent
+                                                                 ]
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#includesObject> ;
+                                               owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> ;
+                                                                   owl:someValuesFrom :Participant
+                                                                 ]
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#satisfies> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass :EventParticipationDescription
+                                             ] .
+
+
+###  http://gdelt.stream/onto/f#EventRole
+:EventRole rdf:type owl:Class ;
+           owl:equivalentClass <http://www.loa-cnr.it/ontologies/DUL.owl#EventType> ;
+           rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Concept> .
+
+
+###  http://gdelt.stream/onto/f#Interpretant
+:Interpretant rdf:type owl:Class ;
+              rdfs:subClassOf :EventRole ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                                owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> ;
+                                                    owl:someValuesFrom :EventInterpretationSituation
+                                                  ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :EventInterpretationDescription
+                              ] .
+
+
+###  http://gdelt.stream/onto/f#Justification
+:Justification rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Role> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                                 owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn> ;
+                                                     owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                          owl:unionOf ( :EventCausalitySituation
+                                                                                        :EventCorrelationSituation
+                                                                                      )
+                                                                        ]
+                                                   ]
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass [ rdf:type owl:Class ;
+                                               owl:unionOf ( :EventCausalityDescription
+                                                             :EventCorrelationDescription
+                                                           )
+                                             ]
+                               ] .
+
+
+###  http://gdelt.stream/onto/f#Participant
+:Participant rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Role> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                               owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn> ;
+                                                   owl:someValuesFrom :EventParticipationSituation
+                                                 ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :EventParticipationDescription
+                             ] .
+
+
+###  http://gdelt.stream/onto/f#RelevantCausality
+:RelevantCausality rdf:type owl:Class ;
+                   rdfs:subClassOf :RelevantSituation ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                                     owl:allValuesFrom :EventCausalitySituation
+                                   ] .
+
+
+###  http://gdelt.stream/onto/f#RelevantComposition
+:RelevantComposition rdf:type owl:Class ;
+                     rdfs:subClassOf :RelevantSituation ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                                       owl:allValuesFrom :EventCompositionSituation
+                                     ] .
+
+
+###  http://gdelt.stream/onto/f#RelevantCorrelation
+:RelevantCorrelation rdf:type owl:Class ;
+                     rdfs:subClassOf :RelevantSituation ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                                       owl:allValuesFrom :EventCorrelationSituation
+                                     ] .
+
+
+###  http://gdelt.stream/onto/f#RelevantParticipation
+:RelevantParticipation rdf:type owl:Class ;
+                       rdfs:subClassOf :RelevantSituation ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                                         owl:allValuesFrom :EventParticipationSituation
+                                       ] .
+
+
+###  http://gdelt.stream/onto/f#RelevantSituation
+:RelevantSituation rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.loa-cnr.it/ontologies/DUL.owl#Role> ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> ;
+                                     owl:allValuesFrom [ owl:intersectionOf ( <http://www.loa-cnr.it/ontologies/DUL.owl#Situation>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn> ;
+                                                                                owl:someValuesFrom :EventInterpretationSituation
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :EventInterpretationDescription
+                                   ] .
+
+
+###  http://gdelt.stream/onto/f#SaptioTemporalConstraint
+:SaptioTemporalConstraint rdf:type owl:Class ;
+                          rdfs:subClassOf :EventCompositionConstraint ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes> ;
+                                            owl:allValuesFrom <http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion>
+                                          ] .
+
+
+###  http://gdelt.stream/onto/f#SpatialConstraint
+:SpatialConstraint rdf:type owl:Class ;
+                   rdfs:subClassOf :EventCompositionConstraint ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes> ;
+                                     owl:allValuesFrom <http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion>
+                                   ] .
+
+
+###  http://gdelt.stream/onto/f#TemporalConstraint
+:TemporalConstraint rdf:type owl:Class ;
+                    rdfs:subClassOf :EventCompositionConstraint ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes> ;
+                                      owl:allValuesFrom <http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval>
+                                    ] .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#Concept
+<http://www.loa-cnr.it/ontologies/DUL.owl#Concept> rdf:type owl:Class .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#Description
+<http://www.loa-cnr.it/ontologies/DUL.owl#Description> rdf:type owl:Class .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#EventType
+<http://www.loa-cnr.it/ontologies/DUL.owl#EventType> rdf:type owl:Class .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#Parameter
+<http://www.loa-cnr.it/ontologies/DUL.owl#Parameter> rdf:type owl:Class .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#Role
+<http://www.loa-cnr.it/ontologies/DUL.owl#Role> rdf:type owl:Class .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#Situation
+<http://www.loa-cnr.it/ontologies/DUL.owl#Situation> rdf:type owl:Class .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion
+<http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion> rdf:type owl:Class .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion
+<http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion> rdf:type owl:Class .
+
+
+###  http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval
+<http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

@@ -1,0 +1,746 @@
+<http://gdelt.stream/onto/f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://gdelt.stream/onto/f> <http://www.w3.org/2002/07/owl#imports> <http://www.loa-cnr.it/ontologies/DUL.owl> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://gdelt.stream/onto/f#hasEventParticipant
+<http://gdelt.stream/onto/f#hasEventParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gdelt.stream/onto/f#hasEventParticipant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant> .
+<http://gdelt.stream/onto/f#hasEventParticipant> <http://www.w3.org/2002/07/owl#inverseOf> <http://gdelt.stream/onto/f#isEventParticipant> .
+<http://gdelt.stream/onto/f#hasEventParticipant> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#DescribedEvent> .
+<http://gdelt.stream/onto/f#hasEventParticipant> <http://www.w3.org/2000/01/rdf-schema#range> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#Participant> .
+# 
+# http://gdelt.stream/onto/f#includesSpace
+<http://gdelt.stream/onto/f#includesSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gdelt.stream/onto/f#includesSpace> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor> .
+<http://gdelt.stream/onto/f#includesSpace> <http://www.w3.org/2002/07/owl#inverseOf> <http://gdelt.stream/onto/f#isSpaceIncludedIn> .
+# 
+# http://gdelt.stream/onto/f#includesSpaceTime
+<http://gdelt.stream/onto/f#includesSpaceTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gdelt.stream/onto/f#includesSpaceTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor> .
+<http://gdelt.stream/onto/f#includesSpaceTime> <http://www.w3.org/2002/07/owl#inverseOf> <http://gdelt.stream/onto/f#isSpaceTimeIncludedIn> .
+# 
+# http://gdelt.stream/onto/f#isEventParticipant
+<http://gdelt.stream/onto/f#isEventParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gdelt.stream/onto/f#isEventParticipant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn> .
+<http://gdelt.stream/onto/f#isEventParticipant> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#Participant> .
+<http://gdelt.stream/onto/f#isEventParticipant> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#DescribedEvent> .
+# 
+# http://gdelt.stream/onto/f#isSpaceIncludedIn
+<http://gdelt.stream/onto/f#isSpaceIncludedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gdelt.stream/onto/f#isSpaceIncludedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting> .
+<http://gdelt.stream/onto/f#isSpaceIncludedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion> .
+<http://gdelt.stream/onto/f#isSpaceIncludedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> .
+# 
+# http://gdelt.stream/onto/f#isSpaceTimeIncludedIn
+<http://gdelt.stream/onto/f#isSpaceTimeIncludedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gdelt.stream/onto/f#isSpaceTimeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting> .
+<http://gdelt.stream/onto/f#isSpaceTimeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion> .
+<http://gdelt.stream/onto/f#isSpaceTimeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#classifies
+<http://www.loa-cnr.it/ontologies/DUL.owl#classifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#defines
+<http://www.loa-cnr.it/ontologies/DUL.owl#defines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant
+<http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting
+<http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent
+<http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#includesObject
+<http://www.loa-cnr.it/ontologies/DUL.owl#includesObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#includesTime
+<http://www.loa-cnr.it/ontologies/DUL.owl#includesTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy
+<http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn
+<http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn
+<http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn
+<http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy
+<http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn
+<http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy
+<http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor
+<http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes
+<http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#satisfies
+<http://www.loa-cnr.it/ontologies/DUL.owl#satisfies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://gdelt.stream/onto/f#Cause
+<http://gdelt.stream/onto/f#Cause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#Cause> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#EventRole> .
+<http://gdelt.stream/onto/f#Cause> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#EventCausalitySituation> .
+<http://gdelt.stream/onto/f#Cause> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventCausalityDescription> .
+# 
+# http://gdelt.stream/onto/f#Component
+<http://gdelt.stream/onto/f#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#Component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#EventRole> .
+<http://gdelt.stream/onto/f#Component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#EventCompositionSituation> .
+<http://gdelt.stream/onto/f#Component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventCompositionDescription> .
+# 
+# http://gdelt.stream/onto/f#Composite
+<http://gdelt.stream/onto/f#Composite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#Composite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#EventRole> .
+<http://gdelt.stream/onto/f#Composite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#EventCompositionSituation> .
+<http://gdelt.stream/onto/f#Composite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> .
+_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventCompositionDescription> .
+# 
+# http://gdelt.stream/onto/f#Correlate
+<http://gdelt.stream/onto/f#Correlate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#Correlate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#EventRole> .
+<http://gdelt.stream/onto/f#Correlate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#EventCorrelationSituation> .
+<http://gdelt.stream/onto/f#Correlate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventCorrelationDescription> .
+# 
+# http://gdelt.stream/onto/f#DescribedEvent
+<http://gdelt.stream/onto/f#DescribedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#DescribedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#EventRole> .
+<http://gdelt.stream/onto/f#DescribedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#EventParticipationSituation> .
+<http://gdelt.stream/onto/f#DescribedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> .
+_:genid19 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventParticipationDescription> .
+# 
+# http://gdelt.stream/onto/f#Effect
+<http://gdelt.stream/onto/f#Effect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#Effect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#EventRole> .
+<http://gdelt.stream/onto/f#Effect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#EventCausalitySituation> .
+<http://gdelt.stream/onto/f#Effect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> .
+_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventCausalityDescription> .
+# 
+# http://gdelt.stream/onto/f#EventCausalityDescription
+<http://gdelt.stream/onto/f#EventCausalityDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventCausalityDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Description> .
+<http://gdelt.stream/onto/f#EventCausalityDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid24 <http://www.w3.org/2002/07/owl#unionOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#Cause> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#Effect> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#Justification> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://gdelt.stream/onto/f#EventCausalityDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#Cause> .
+<http://gdelt.stream/onto/f#EventCausalityDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid29 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#Effect> .
+<http://gdelt.stream/onto/f#EventCausalityDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid30 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#Justification> .
+<http://gdelt.stream/onto/f#EventCausalityDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy> .
+_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventCausalitySituation> .
+# 
+# http://gdelt.stream/onto/f#EventCausalitySituation
+<http://gdelt.stream/onto/f#EventCausalitySituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventCausalitySituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> .
+<http://gdelt.stream/onto/f#EventCausalitySituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> .
+_:genid32 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onClass> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#Cause> .
+<http://gdelt.stream/onto/f#EventCausalitySituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> .
+_:genid34 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onClass> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#Effect> .
+<http://gdelt.stream/onto/f#EventCausalitySituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#includesObject> .
+_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onClass> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.loa-cnr.it/ontologies/DUL.owl#Description> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#Justification> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventCausalitySituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#satisfies> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventCausalityDescription> .
+# 
+# http://gdelt.stream/onto/f#EventCompositionConstraint
+<http://gdelt.stream/onto/f#EventCompositionConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventCompositionConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Parameter> .
+<http://gdelt.stream/onto/f#EventCompositionConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> .
+_:genid42 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://gdelt.stream/onto/f#EventCompositionDescription> .
+<http://gdelt.stream/onto/f#EventCompositionConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes> .
+_:genid43 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#EventCompositionSituation> .
+# 
+# http://gdelt.stream/onto/f#EventCompositionDescription
+<http://gdelt.stream/onto/f#EventCompositionDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventCompositionDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Description> .
+<http://gdelt.stream/onto/f#EventCompositionDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid45 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid46 <http://www.w3.org/2002/07/owl#unionOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#Component> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#Composite> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#EventCompositionConstraint> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://gdelt.stream/onto/f#EventCompositionDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid50 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#Component> .
+<http://gdelt.stream/onto/f#EventCompositionDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid51 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid51 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#Composite> .
+<http://gdelt.stream/onto/f#EventCompositionDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy> .
+_:genid52 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventCompositionSituation> .
+# 
+# http://gdelt.stream/onto/f#EventCompositionSituation
+<http://gdelt.stream/onto/f#EventCompositionSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventCompositionSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> .
+<http://gdelt.stream/onto/f#EventCompositionSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://gdelt.stream/onto/f#includesSpace> .
+_:genid53 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy> .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#SpatialConstraint> .
+<http://gdelt.stream/onto/f#EventCompositionSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://gdelt.stream/onto/f#includesSpaceTime> .
+_:genid55 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#SaptioTemporalConstraint> .
+<http://gdelt.stream/onto/f#EventCompositionSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> .
+_:genid57 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid59 <http://www.w3.org/2002/07/owl#unionOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#Component> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#Composite> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://gdelt.stream/onto/f#EventCompositionSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#includesTime> .
+_:genid62 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy> .
+_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#TemporalConstraint> .
+<http://gdelt.stream/onto/f#EventCompositionSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#satisfies> .
+_:genid64 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid64 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventCompositionDescription> .
+# 
+# http://gdelt.stream/onto/f#EventCorrelationDescription
+<http://gdelt.stream/onto/f#EventCorrelationDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventCorrelationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Description> .
+<http://gdelt.stream/onto/f#EventCorrelationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid65 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid66 <http://www.w3.org/2002/07/owl#unionOf> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#Correlate> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#Justification> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://gdelt.stream/onto/f#EventCorrelationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid69 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid69 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#Correlate> .
+<http://gdelt.stream/onto/f#EventCorrelationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid70 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid70 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#Justification> .
+<http://gdelt.stream/onto/f#EventCorrelationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy> .
+_:genid71 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid71 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventCorrelationSituation> .
+# 
+# http://gdelt.stream/onto/f#EventCorrelationSituation
+<http://gdelt.stream/onto/f#EventCorrelationSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventCorrelationSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> .
+<http://gdelt.stream/onto/f#EventCorrelationSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> .
+_:genid72 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid72 <http://www.w3.org/2002/07/owl#onClass> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid73 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#Correlate> .
+<http://gdelt.stream/onto/f#EventCorrelationSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#includesObject> .
+_:genid74 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid74 <http://www.w3.org/2002/07/owl#onClass> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.loa-cnr.it/ontologies/DUL.owl#Description> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#Justification> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventCorrelationSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#satisfies> .
+_:genid79 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid79 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventCorrelationDescription> .
+# 
+# http://gdelt.stream/onto/f#EventInterpretationDescription
+<http://gdelt.stream/onto/f#EventInterpretationDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventInterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Description> .
+<http://gdelt.stream/onto/f#EventInterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid80 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid81 <http://www.w3.org/2002/07/owl#unionOf> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#Interpretant> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#RelevantSituation> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://gdelt.stream/onto/f#EventInterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid84 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid84 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#RelevantSituation> .
+<http://gdelt.stream/onto/f#EventInterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid85 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid85 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#Interpretant> .
+<http://gdelt.stream/onto/f#EventInterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy> .
+_:genid86 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid86 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventInterpretationSituation> .
+# 
+# http://gdelt.stream/onto/f#EventInterpretationSituation
+<http://gdelt.stream/onto/f#EventInterpretationSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventInterpretationSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> .
+<http://gdelt.stream/onto/f#EventInterpretationSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#includesObject> .
+_:genid87 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid88 .
+_:genid88 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid90 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#RelevantSituation> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventInterpretationSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> .
+_:genid92 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid92 <http://www.w3.org/2002/07/owl#onClass> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid93 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#Interpretant> .
+<http://gdelt.stream/onto/f#EventInterpretationSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#satisfies> .
+_:genid94 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid94 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventInterpretationDescription> .
+# 
+# http://gdelt.stream/onto/f#EventParticipationDescription
+<http://gdelt.stream/onto/f#EventParticipationDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventParticipationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Description> .
+<http://gdelt.stream/onto/f#EventParticipationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid95 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid96 <http://www.w3.org/2002/07/owl#unionOf> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#DescribedEvent> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#Participant> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://gdelt.stream/onto/f#EventParticipationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid99 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid99 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#Participant> .
+<http://gdelt.stream/onto/f#EventParticipationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#defines> .
+_:genid100 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid100 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#DescribedEvent> .
+<http://gdelt.stream/onto/f#EventParticipationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy> .
+_:genid101 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid101 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventParticipationSituation> .
+# 
+# http://gdelt.stream/onto/f#EventParticipationSituation
+<http://gdelt.stream/onto/f#EventParticipationSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventParticipationSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> .
+<http://gdelt.stream/onto/f#EventParticipationSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> .
+_:genid102 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid103 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#DescribedEvent> .
+<http://gdelt.stream/onto/f#EventParticipationSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#includesObject> .
+_:genid104 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> .
+_:genid105 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#Participant> .
+<http://gdelt.stream/onto/f#EventParticipationSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#satisfies> .
+_:genid106 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid106 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventParticipationDescription> .
+# 
+# http://gdelt.stream/onto/f#EventRole
+<http://gdelt.stream/onto/f#EventRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#EventRole> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.loa-cnr.it/ontologies/DUL.owl#EventType> .
+<http://gdelt.stream/onto/f#EventRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Concept> .
+# 
+# http://gdelt.stream/onto/f#Interpretant
+<http://gdelt.stream/onto/f#Interpretant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#Interpretant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#EventRole> .
+<http://gdelt.stream/onto/f#Interpretant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid107 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> .
+_:genid108 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#EventInterpretationSituation> .
+<http://gdelt.stream/onto/f#Interpretant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> .
+_:genid109 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid109 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventInterpretationDescription> .
+# 
+# http://gdelt.stream/onto/f#Justification
+<http://gdelt.stream/onto/f#Justification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#Justification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Role> .
+<http://gdelt.stream/onto/f#Justification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid110 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn> .
+_:genid111 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid112 <http://www.w3.org/2002/07/owl#unionOf> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#EventCausalitySituation> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#EventCorrelationSituation> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://gdelt.stream/onto/f#Justification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> .
+_:genid115 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid115 <http://www.w3.org/2002/07/owl#onClass> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid116 <http://www.w3.org/2002/07/owl#unionOf> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#EventCausalityDescription> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://gdelt.stream/onto/f#EventCorrelationDescription> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://gdelt.stream/onto/f#Participant
+<http://gdelt.stream/onto/f#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Role> .
+<http://gdelt.stream/onto/f#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid119 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid119 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn> .
+_:genid120 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#EventParticipationSituation> .
+<http://gdelt.stream/onto/f#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> .
+_:genid121 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid121 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventParticipationDescription> .
+# 
+# http://gdelt.stream/onto/f#RelevantCausality
+<http://gdelt.stream/onto/f#RelevantCausality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#RelevantCausality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#RelevantSituation> .
+<http://gdelt.stream/onto/f#RelevantCausality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid122 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://gdelt.stream/onto/f#EventCausalitySituation> .
+# 
+# http://gdelt.stream/onto/f#RelevantComposition
+<http://gdelt.stream/onto/f#RelevantComposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#RelevantComposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#RelevantSituation> .
+<http://gdelt.stream/onto/f#RelevantComposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid123 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid123 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://gdelt.stream/onto/f#EventCompositionSituation> .
+# 
+# http://gdelt.stream/onto/f#RelevantCorrelation
+<http://gdelt.stream/onto/f#RelevantCorrelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#RelevantCorrelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#RelevantSituation> .
+<http://gdelt.stream/onto/f#RelevantCorrelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid124 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://gdelt.stream/onto/f#EventCorrelationSituation> .
+# 
+# http://gdelt.stream/onto/f#RelevantParticipation
+<http://gdelt.stream/onto/f#RelevantParticipation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#RelevantParticipation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#RelevantSituation> .
+<http://gdelt.stream/onto/f#RelevantParticipation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid125 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://gdelt.stream/onto/f#EventParticipationSituation> .
+# 
+# http://gdelt.stream/onto/f#RelevantSituation
+<http://gdelt.stream/onto/f#RelevantSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#RelevantSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.loa-cnr.it/ontologies/DUL.owl#Role> .
+<http://gdelt.stream/onto/f#RelevantSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid126 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> .
+_:genid126 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid127 .
+_:genid127 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid129 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn> .
+_:genid129 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://gdelt.stream/onto/f#EventInterpretationSituation> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#RelevantSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid131 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> .
+_:genid131 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid131 <http://www.w3.org/2002/07/owl#onClass> <http://gdelt.stream/onto/f#EventInterpretationDescription> .
+# 
+# http://gdelt.stream/onto/f#SaptioTemporalConstraint
+<http://gdelt.stream/onto/f#SaptioTemporalConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#SaptioTemporalConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#EventCompositionConstraint> .
+<http://gdelt.stream/onto/f#SaptioTemporalConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid132 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes> .
+_:genid132 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion> .
+# 
+# http://gdelt.stream/onto/f#SpatialConstraint
+<http://gdelt.stream/onto/f#SpatialConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#SpatialConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#EventCompositionConstraint> .
+<http://gdelt.stream/onto/f#SpatialConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid133 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes> .
+_:genid133 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion> .
+# 
+# http://gdelt.stream/onto/f#TemporalConstraint
+<http://gdelt.stream/onto/f#TemporalConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/f#TemporalConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://gdelt.stream/onto/f#EventCompositionConstraint> .
+<http://gdelt.stream/onto/f#TemporalConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid134 <http://www.w3.org/2002/07/owl#onProperty> <http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes> .
+_:genid134 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#Concept
+<http://www.loa-cnr.it/ontologies/DUL.owl#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#Description
+<http://www.loa-cnr.it/ontologies/DUL.owl#Description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#EventType
+<http://www.loa-cnr.it/ontologies/DUL.owl#EventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#Parameter
+<http://www.loa-cnr.it/ontologies/DUL.owl#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#Role
+<http://www.loa-cnr.it/ontologies/DUL.owl#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#Situation
+<http://www.loa-cnr.it/ontologies/DUL.owl#Situation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion
+<http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion
+<http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval
+<http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

@@ -1,0 +1,954 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://semanticweb.cs.vu.nl/2009/11/sem", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://gdelt.stream/onto/sem" ],
+    "iri" : "http://gdelt.stream/onto/sem"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "55",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "53",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "20",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://gdelt.stream/onto/sem/PlaceType",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlaceType",
+      "undefined" : "Place type"
+    },
+    "comment" : {
+      "undefined" : "EventType contains all resources that are used to classify Places, e.g. river."
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/RoleType",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RoleType",
+      "undefined" : "Role type"
+    },
+    "comment" : {
+      "undefined" : "EventType contains all resources that are used to classify Roles, e.g. receiver."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/Object",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Object",
+      "undefined" : "Object"
+    },
+    "comment" : {
+      "undefined" : "Objects are passive, inanimate Actors."
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/EventType",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventType",
+      "undefined" : "Event type"
+    },
+    "comment" : {
+      "undefined" : "EventType contains all resources that are used to classify Events, e.g. meeting."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/Role",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Role",
+      "undefined" : "Role"
+    },
+    "comment" : {
+      "undefined" : "Roles are properties with a subspecified function or position indicated by a RoleType in the scope of an Event. For example, the sem:hasActor property can be subspecified with the RoleType attacker, to denote that the type of participation of the Actor in the scope of the Event is \"attacker\". The sem:hasPlace property can be subspecified with the RoleType origin, to denote that within the scope of the Event it is the origin."
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/Event",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "comment" : {
+      "undefined" : "Events are things that happen. This comprises everything from historical events to web site sessions and mythical journeys. Event is the central class of SEM."
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/Actor",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Actor",
+      "undefined" : "Actor"
+    },
+    "subClasses" : [ "7" ],
+    "comment" : {
+      "undefined" : "Actors are entities that take part in an Event, either actively or passively. Actors do not necessarily have to be sentient. They can also be objects. Actors are a thing, animate or inanimate, physical or non-physical.\n"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "23", "19" ]
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/ActorType",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActorType",
+      "undefined" : "Actor type"
+    },
+    "comment" : {
+      "undefined" : "EventType contains all resources that are used to classify Actors, e.g. person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "37",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "55",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/Authority",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Authority",
+      "undefined" : "Authority"
+    },
+    "subClasses" : [ "8" ],
+    "comment" : {
+      "undefined" : "Authorities are entities that state SEM properties. Their nature is not specified. They can symbolize people, organizations, sources of information, etc."
+    },
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "10",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/Type",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Type",
+      "undefined" : "Type"
+    },
+    "subClasses" : [ "0", "2", "16", "5", "35" ],
+    "comment" : {
+      "undefined" : "The SEM Type class contains all types of Core instances. These can be either individuals of classes themselves. This class is meant to be extended for each application domain."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "53",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "20",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/Time",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Time",
+      "undefined" : "Time"
+    },
+    "comment" : {
+      "undefined" : "Time contains symbolic representations of when an Event took place. Time instances do not necessarily need to have a timestamp associated with them. The Time class exists to represent semantics of time, e.g. that one thing happens before another, even though the exact timestamps are unknown."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/TimeType",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeType",
+      "undefined" : "Time type"
+    },
+    "comment" : {
+      "undefined" : "EventType contains all resources that are used to classify Time, e.g. century."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/View",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "View",
+      "undefined" : "View"
+    },
+    "comment" : {
+      "undefined" : "Views are properties that only hold according to a certain Authority."
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/Core",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Core",
+      "undefined" : "Core"
+    },
+    "subClasses" : [ "8", "4", "14", "11" ],
+    "comment" : {
+      "undefined" : "The SEM Core class contains all entities that make up the context of an event: Events, Actors, Places, Times. This class is meant to be extended for each application domain."
+    },
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/Place",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place",
+      "undefined" : "Place"
+    },
+    "comment" : {
+      "undefined" : "Places are locations where an Event happens. They do not need to be physical places and hence do not necessarily need coordinates. Neither do they need to have any significance apart from them being the location of an Event."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/Constraint",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Constraint",
+      "undefined" : "Constraint"
+    },
+    "subClasses" : [ "22", "17", "29" ],
+    "comment" : {
+      "undefined" : "The SEM Constraint class contains instances of properties that have a constrained (i.e. not universal) validity. This includes time dependent validity (Temporary), validity in the guise of a specific role (Role), or validity according to a given Authority (View)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/Temporary",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Temporary",
+      "undefined" : "Temporary"
+    },
+    "comment" : {
+      "undefined" : "Temporaries are properties that only hold during a certain Time, which is either indicated with the sem:hasTime property to an instance of sem:Time, or with the sem:hasTimeStamp property to some timestamp(s)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "18" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://gdelt.stream/onto/sem/timeType",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "timeType",
+      "undefined" : "timeType"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Has time type is used to assign a type to a time individual."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/hasPlace",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasPlace",
+      "undefined" : "hasPlace"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/hasSubEvent",
+    "inverse" : "15",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasSubEvent",
+      "undefined" : "hasSubevent"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Has subevent connects an Event to other Events that belong to it. This is a very generic property that does not mean the subevents fully define the superconcept or that there is any causal relationship."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/subEventOf",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "subEventOf",
+      "undefined" : "subevent of"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Inverse property of hasSubEvent"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/accordingTo",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "accordingTo",
+      "undefined" : "accordingTo"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "According to is used to state which Authority sais that a property constrained by the View Constraint is true."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/eventProperty",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "eventProperty",
+      "undefined" : "event property"
+    },
+    "domain" : "20",
+    "subproperty" : [ "9", "13", "24", "25" ],
+    "comment" : {
+      "undefined" : "Event properties connect Events to other SEM Core entities."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/subTypeOf",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "subTypeOf",
+      "undefined" : "subTypeOf"
+    },
+    "superproperty" : [ "27" ],
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "The inverse property of hasSubType."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "26"
+  }, {
+    "range" : "18",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestBeginTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasEarliestBeginTimeStamp",
+      "undefined" : "has earliest begin timestamp"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Has earliest begin timestamp is used to indicate the earliest possible starting time of an uncertain time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "30"
+  }, {
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/eventType",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "eventType",
+      "undefined" : "eventType"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Has event type is used to assign a type to an event."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "33"
+  }, {
+    "range" : "19",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "19",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/hasTime",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasTime",
+      "undefined" : "hasTime"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "37",
+    "attributes" : [ "object", "external" ],
+    "id" : "25"
+  }, {
+    "range" : "18",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "19",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasLatestBeginTimeStamp",
+      "undefined" : "has latest begin timestamp"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Has latest begin timestamp is used to indicate the latest possible starting time of an uncertain time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "type"
+    },
+    "domain" : "20",
+    "subproperty" : [ "6" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "44",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www.kulttuurisampo.fi/ebkr/time",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTimeStamp",
+      "undefined" : "hasTimestamp"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Has timestamp is used to put time indicators on any individual. It is the most common way to state when an Event took place. There are subproperties of hasTimeStamp to represent time intervals and uncertain time intervals. If the exact moment is not known, but it is necessary to specify a certain time, use hasTime instead. All of these properties are also used to indicate the time at which a property under the Temporary Constraint is valid."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/placeType",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "placeType",
+      "undefined" : "placeType"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Has place type is used to assign a type to a place."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "45"
+  }, {
+    "range" : "1",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "19",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "23",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "1",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "1",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/hasActor",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasActor",
+      "undefined" : "hasActor"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "53",
+    "comment" : {
+      "undefined" : "Has actor is used to state which Actors or Objects participate in an Event."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "24"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestEndTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "hasLatestEndTimeStamp",
+      "undefined" : "has latest end timestamp"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Has latest end timestamp is used to indicate the latest possible ending time of an uncertain time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasEndTimeStamp",
+      "undefined" : "has end timestamp"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Has end timestamp is used to indicate the end of a time interval. Omitting the hasEndTimeStamp while stating a hasBeginTimeStamp is interpreted as an open ended interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/hasSubType",
+    "inverse" : "26",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasSubType",
+      "undefined" : "has subtype"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Has sub type is used to state that a type falls under another type. This is a generic aggregation relation that is used to generalize over various hierarchical relations that can exist between types."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasBeginTimeStamp",
+      "undefined" : "has begin timestamp"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Has begin timestamp is used to indicate the beginning of a time interval. Omitting the hasBeginTimeStamp while stating a hasEndTimeStamp is interpreted as an open ended interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "subClassOf"
+    },
+    "domain" : "20",
+    "subproperty" : [ "26" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestEndTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hasEarliestEndTimeStamp",
+      "undefined" : "has earliest end timestamp"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Has earliest end timestamp is used to indicate the earliest possible ending time of an uncertain time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/actorType",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "actorType",
+      "undefined" : "actorType"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Has actor type is used to assign a type to an actor."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/roleType",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "roleType",
+      "undefined" : "roleType"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Has role type is used to assign a role type to a Role property constraint. This role is a subspecification of the eventProperty which it constrains. For example, if an Event hasActor an Actor and this property is given a Role Constraint, then roleType can be used to assign a role to the participation of the Actor in the Event indicated by hasActor."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://gdelt.stream/onto/sem/type",
+    "baseIri" : "http://gdelt.stream/onto/sem",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "type",
+      "undefined" : "type property"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "55",
+    "subproperty" : [ "3", "45", "33", "65", "66" ],
+    "comment" : {
+      "undefined" : "Type is the super property of the properties that are used to indicate the type of a Core instance, eventType, actorType, placeType, timeType; and of roleType. Types can be both classes and individuals, cf. OWL 2 punning."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "6"
+  } ]
+}

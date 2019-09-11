@@ -1,0 +1,104 @@
+<html>
+  <h2 id="intro" class="list">Introduction <span class="backlink"></span></h2>
+  <span class="markdown">
+    Though their speciﬁc methods diﬀer signiﬁcantly, both historians and
+    journalists work to produce narrative chains of events to explain phenomena
+    in the past. The resulting historical records of events constitute valuable
+    cultural heritage of interest to academics as well as the general public.
+    The Linked Data 1 eﬀort seeks to publish and connect RDF data sets on the
+    Web using dereferenceable URIs for identifying web documents, real-world
+    objects, links between them and/or other pieces of information. Yet, while
+    standard and widely used vocabularies have emerged for representing people,
+    places, and other types of entities as Linked Data, none has yet emerged
+    speciﬁcally for events. The term “event” has several meanings. It is used to
+    mean both phenomena that have happened (e.g. things reported in news
+    articles or explained by historians) and phenomena that are scheduled to
+    happen (e.g. things put in calendars and datebooks). Various standards and
+    formats have been proposed for representing the latter as structured data,
+    usually for personal information management purposes 2 . Furthermore, there
+    are several web services available for aggregating, classifying and
+    syndicating scheduled events 3 . In this paper, we focus on the former
+    category: phenomena that have happened in the past. Hence, we assume events
+    to be unique entities that, while they may have been part of a series of
+    similar events, occurred only once. This paper makes two contributions.
+    First, we compare existing models of historical events looking at the
+    diﬀerent choices they make of how to represent events (Section 2). These
+    models serve diﬀerent communities and have diﬀerent strengths. Our goal is
+    not to propose yet another ontology per se, but rather to build an
+    interlingua model that solves an interoperability problem by providing a set
+    of axioms expressing mappings between existing event ontologies (Section 3).
+    Second, we present tools for populating this model with data coming from
+    existing sources, such as Wikipedia timelines. We describe a prototype of an
+    “event directory” 4 web service which can be used to locate stable URIs for
+    past events and to provide RDFS+OWL descriptions of those events and links
+    to related resources.</span
+  >
+  <div id="namespacedeclarations">
+    <h3 id="ns" class="list">Namespace declarations</h3>
+    <div id="ns" align="center">
+      <table>
+        <caption>
+          Table 1: Namespaces used in the document
+        </caption>
+        <tbody>
+          <tr>
+            <td><b>lode</b></td>
+            <td>&lt;http://gdelt.stream/onto/lode/&gt;</td>
+          </tr>
+          <tr>
+            <td><b>owl</b></td>
+            <td>&lt;http://www.w3.org/2002/07/owl&gt;</td>
+          </tr>
+          <tr>
+            <td><b>xsd</b></td>
+            <td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td>
+          </tr>
+          <tr>
+            <td><b>dcmitype</b></td>
+            <td>&lt;http://purl.org/dc/dcmitype&gt;</td>
+          </tr>
+          <tr>
+            <td><b>skos</b></td>
+            <td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td>
+          </tr>
+          <tr>
+            <td><b>rdfs</b></td>
+            <td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td>
+          </tr>
+          <tr>
+            <td><b>dul-owl</b></td>
+            <td>&lt;http://www.loa-cnr.it/ontologies/DUL.owl&gt;</td>
+          </tr>
+          <tr>
+            <td><b>wgs84-pos</b></td>
+            <td>&lt;http://www.w3.org/2003/01/geo/wgs84_pos&gt;</td>
+          </tr>
+          <tr>
+            <td><b>rdf</b></td>
+            <td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td>
+          </tr>
+          <tr>
+            <td><b>terms</b></td>
+            <td>&lt;http://purl.org/dc/terms&gt;</td>
+          </tr>
+          <tr>
+            <td><b>time</b></td>
+            <td>&lt;http://www.w3.org/2006/time&gt;</td>
+          </tr>
+          <tr>
+            <td><b>event-owl</b></td>
+            <td>&lt;http://purl.org/NET/c4dm/event.owl&gt;</td>
+          </tr>
+          <tr>
+            <td><b>foaf</b></td>
+            <td>&lt;http://xmlns.com/foaf/0.1&gt;</td>
+          </tr>
+          <tr>
+            <td><b>default namespace</b></td>
+            <td>&lt;http://gdelt.stream/onto/lode&gt;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</html>

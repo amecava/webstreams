@@ -1,0 +1,1207 @@
+<html><h2 id="crossreference" class="list">Cross reference for SEM classes, properties and dataproperties <span class="backlink"></span></h2>
+This section provides details for each class and property defined by SEM.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#/Actor" title="http://gdelt.stream/onto/sem/Actor">Actor</a>
+      </li>
+      <li>
+         <a href="#/ActorType" title="http://gdelt.stream/onto/sem/ActorType">Actor type</a>
+      </li>
+      <li>
+         <a href="#/Authority" title="http://gdelt.stream/onto/sem/Authority">Authority</a>
+      </li>
+      <li>
+         <a href="#/Constraint" title="http://gdelt.stream/onto/sem/Constraint">Constraint</a>
+      </li>
+      <li>
+         <a href="#/Core" title="http://gdelt.stream/onto/sem/Core">Core</a>
+      </li>
+      <li>
+         <a href="#/Event" title="http://gdelt.stream/onto/sem/Event">Event</a>
+      </li>
+      <li>
+         <a href="#/EventType" title="http://gdelt.stream/onto/sem/EventType">Event type</a>
+      </li>
+      <li>
+         <a href="#/Object" title="http://gdelt.stream/onto/sem/Object">Object</a>
+      </li>
+      <li>
+         <a href="#/Place" title="http://gdelt.stream/onto/sem/Place">Place</a>
+      </li>
+      <li>
+         <a href="#/PlaceType" title="http://gdelt.stream/onto/sem/PlaceType">Place type</a>
+      </li>
+      <li>
+         <a href="#/Role" title="http://gdelt.stream/onto/sem/Role">Role</a>
+      </li>
+      <li>
+         <a href="#/RoleType" title="http://gdelt.stream/onto/sem/RoleType">Role type</a>
+      </li>
+      <li>
+         <a href="#/Temporary" title="http://gdelt.stream/onto/sem/Temporary">Temporary</a>
+      </li>
+      <li>
+         <a href="#/Time" title="http://gdelt.stream/onto/sem/Time">Time</a>
+      </li>
+      <li>
+         <a href="#/TimeType" title="http://gdelt.stream/onto/sem/TimeType">Time type</a>
+      </li>
+      <li>
+         <a href="#/Type" title="http://gdelt.stream/onto/sem/Type">Type</a>
+      </li>
+      <li>
+         <a href="#/View" title="http://gdelt.stream/onto/sem/View">View</a>
+      </li>
+   </ul>
+   <div class="entity" id="/Actor">
+      <h3>Actor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/Actor</p>
+      <div class="comment">
+         <span class="markdown">Actors are entities that take part in an Event, either actively or passively. Actors do not necessarily have to be sentient. They can also be objects. Actors are a thing, animate or inanimate, physical or non-physical.
+</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#/Authority" title="http://gdelt.stream/onto/sem/Authority">Authority</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#/Core" title="http://gdelt.stream/onto/sem/Core">Core</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#/Object" title="http://gdelt.stream/onto/sem/Object">Object</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#/actorType" title="http://gdelt.stream/onto/sem/actorType">actorType</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/hasActor" title="http://gdelt.stream/onto/sem/hasActor">hasActor</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/ActorType">
+      <h3>Actor type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/ActorType</p>
+      <div class="comment">
+         <span class="markdown">EventType contains all resources that are used to classify Actors, e.g. person</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#/Type" title="http://gdelt.stream/onto/sem/Type">Type</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/actorType" title="http://gdelt.stream/onto/sem/actorType">actorType</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/Authority">
+      <h3>Authority<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/Authority</p>
+      <div class="comment">
+         <span class="markdown">Authorities are entities that state SEM properties. Their nature is not specified. They can symbolize people, organizations, sources of information, etc.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#/Actor" title="http://gdelt.stream/onto/sem/Actor">Actor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/accordingTo" title="http://gdelt.stream/onto/sem/accordingTo">accordingTo</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/Constraint">
+      <h3>Constraint<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/Constraint</p>
+      <div class="comment">
+         <span class="markdown">The SEM Constraint class contains instances of properties that have a constrained (i.e. not universal) validity. This includes time dependent validity (Temporary), validity in the guise of a specific role (Role), or validity according to a given Authority (View).</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#/Role" title="http://gdelt.stream/onto/sem/Role">Role</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#/Temporary" title="http://gdelt.stream/onto/sem/Temporary">Temporary</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#/View" title="http://gdelt.stream/onto/sem/View">View</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/Core">
+      <h3>Core<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/Core</p>
+      <div class="comment">
+         <span class="markdown">The SEM Core class contains all entities that make up the context of an event: Events, Actors, Places, Times. This class is meant to be extended for each application domain.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#/Actor" title="http://gdelt.stream/onto/sem/Actor">Actor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#/Event" title="http://gdelt.stream/onto/sem/Event">Event</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#/Place" title="http://gdelt.stream/onto/sem/Place">Place</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#/Time" title="http://gdelt.stream/onto/sem/Time">Time</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/Event">
+      <h3>Event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/Event</p>
+      <div class="comment">
+         <span class="markdown">Events are things that happen. This comprises everything from historical events to web site sessions and mythical journeys. Event is the central class of SEM.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#/Core" title="http://gdelt.stream/onto/sem/Core">Core</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#/eventType" title="http://gdelt.stream/onto/sem/eventType">eventType</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/hasSubEvent" title="http://gdelt.stream/onto/sem/hasSubEvent">hasSubevent</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/hasSubEvent" title="http://gdelt.stream/onto/sem/hasSubEvent">hasSubevent</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/EventType">
+      <h3>Event type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/EventType</p>
+      <div class="comment">
+         <span class="markdown">EventType contains all resources that are used to classify Events, e.g. meeting.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#/Type" title="http://gdelt.stream/onto/sem/Type">Type</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/eventType" title="http://gdelt.stream/onto/sem/eventType">eventType</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/Object">
+      <h3>Object<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/Object</p>
+      <div class="comment">
+         <span class="markdown">Objects are passive, inanimate Actors.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#/Actor" title="http://gdelt.stream/onto/sem/Actor">Actor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/Place">
+      <h3>Place<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/Place</p>
+      <div class="comment">
+         <span class="markdown">Places are locations where an Event happens. They do not need to be physical places and hence do not necessarily need coordinates. Neither do they need to have any significance apart from them being the location of an Event.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#/Core" title="http://gdelt.stream/onto/sem/Core">Core</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#/placeType" title="http://gdelt.stream/onto/sem/placeType">placeType</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/hasPlace" title="http://gdelt.stream/onto/sem/hasPlace">hasPlace</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/PlaceType">
+      <h3>Place type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/PlaceType</p>
+      <div class="comment">
+         <span class="markdown">EventType contains all resources that are used to classify Places, e.g. river.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#/Type" title="http://gdelt.stream/onto/sem/Type">Type</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/placeType" title="http://gdelt.stream/onto/sem/placeType">placeType</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/Role">
+      <h3>Role<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/Role</p>
+      <div class="comment">
+         <span class="markdown">Roles are properties with a subspecified function or position indicated by a RoleType in the scope of an Event. For example, the sem:hasActor property can be subspecified with the RoleType attacker, to denote that the type of participation of the Actor in the scope of the Event is "attacker". The sem:hasPlace property can be subspecified with the RoleType origin, to denote that within the scope of the Event it is the origin.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#/Constraint" title="http://gdelt.stream/onto/sem/Constraint">Constraint</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#/roleType" title="http://gdelt.stream/onto/sem/roleType">roleType</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/RoleType">
+      <h3>Role type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/RoleType</p>
+      <div class="comment">
+         <span class="markdown">EventType contains all resources that are used to classify Roles, e.g. receiver.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#/Type" title="http://gdelt.stream/onto/sem/Type">Type</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/roleType" title="http://gdelt.stream/onto/sem/roleType">roleType</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/Temporary">
+      <h3>Temporary<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/Temporary</p>
+      <div class="comment">
+         <span class="markdown">Temporaries are properties that only hold during a certain Time, which is either indicated with the sem:hasTime property to an instance of sem:Time, or with the sem:hasTimeStamp property to some timestamp(s).</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#/Constraint" title="http://gdelt.stream/onto/sem/Constraint">Constraint</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/Time">
+      <h3>Time<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/Time</p>
+      <div class="comment">
+         <span class="markdown">Time contains symbolic representations of when an Event took place. Time instances do not necessarily need to have a timestamp associated with them. The Time class exists to represent semantics of time, e.g. that one thing happens before another, even though the exact timestamps are unknown.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#/Core" title="http://gdelt.stream/onto/sem/Core">Core</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#/timeType" title="http://gdelt.stream/onto/sem/timeType">timeType</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/hasTime" title="http://gdelt.stream/onto/sem/hasTime">hasTime</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/TimeType">
+      <h3>Time type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/TimeType</p>
+      <div class="comment">
+         <span class="markdown">EventType contains all resources that are used to classify Time, e.g. century.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#/Type" title="http://gdelt.stream/onto/sem/Type">Type</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/timeType" title="http://gdelt.stream/onto/sem/timeType">timeType</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/Type">
+      <h3>Type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/Type</p>
+      <div class="comment">
+         <span class="markdown">The SEM Type class contains all types of Core instances. These can be either individuals of classes themselves. This class is meant to be extended for each application domain.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#/ActorType" title="http://gdelt.stream/onto/sem/ActorType">Actor type</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#/EventType" title="http://gdelt.stream/onto/sem/EventType">Event type</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#/PlaceType" title="http://gdelt.stream/onto/sem/PlaceType">Place type</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#/RoleType" title="http://gdelt.stream/onto/sem/RoleType">Role type</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#/TimeType" title="http://gdelt.stream/onto/sem/TimeType">Time type</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#/hasSubType" title="http://gdelt.stream/onto/sem/hasSubType">has subtype</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/hasSubType" title="http://gdelt.stream/onto/sem/hasSubType">has subtype</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/type" title="http://gdelt.stream/onto/sem/type">type property</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/View">
+      <h3>View<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/View</p>
+      <div class="comment">
+         <span class="markdown">Views are properties that only hold according to a certain Authority.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#/Constraint" title="http://gdelt.stream/onto/sem/Constraint">Constraint</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#/accordingTo" title="http://gdelt.stream/onto/sem/accordingTo">accordingTo</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#/accordingTo" title="http://gdelt.stream/onto/sem/accordingTo">accordingTo</a>
+      </li>
+      <li>
+         <a href="#/actorType" title="http://gdelt.stream/onto/sem/actorType">actorType</a>
+      </li>
+      <li>
+         <a href="#/eventProperty" title="http://gdelt.stream/onto/sem/eventProperty">event property</a>
+      </li>
+      <li>
+         <a href="#/eventType" title="http://gdelt.stream/onto/sem/eventType">eventType</a>
+      </li>
+      <li>
+         <a href="#/hasSubType" title="http://gdelt.stream/onto/sem/hasSubType">has subtype</a>
+      </li>
+      <li>
+         <a href="#/hasActor" title="http://gdelt.stream/onto/sem/hasActor">hasActor</a>
+      </li>
+      <li>
+         <a href="#/hasPlace" title="http://gdelt.stream/onto/sem/hasPlace">hasPlace</a>
+      </li>
+      <li>
+         <a href="#/hasSubEvent" title="http://gdelt.stream/onto/sem/hasSubEvent">hasSubevent</a>
+      </li>
+      <li>
+         <a href="#/hasTime" title="http://gdelt.stream/onto/sem/hasTime">hasTime</a>
+      </li>
+      <li>
+         <a href="#/placeType" title="http://gdelt.stream/onto/sem/placeType">placeType</a>
+      </li>
+      <li>
+         <a href="#/roleType" title="http://gdelt.stream/onto/sem/roleType">roleType</a>
+      </li>
+      <li>
+         <a href="#/subEventOf" title="http://gdelt.stream/onto/sem/subEventOf">subevent of</a>
+      </li>
+      <li>
+         <a href="#/subTypeOf" title="http://gdelt.stream/onto/sem/subTypeOf">subTypeOf</a>
+      </li>
+      <li>
+         <a href="#/timeType" title="http://gdelt.stream/onto/sem/timeType">timeType</a>
+      </li>
+      <li>
+         <a href="#/type" title="http://gdelt.stream/onto/sem/type">type property</a>
+      </li>
+   </ul>
+   <div class="entity" id="/accordingTo">
+      <h3>accordingTo<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/accordingTo</p>
+      <div class="comment">
+         <span class="markdown">According to is used to state which Authority sais that a property constrained by the View Constraint is true.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/View" title="http://gdelt.stream/onto/sem/View">View</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/Authority" title="http://gdelt.stream/onto/sem/Authority">Authority</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/actorType">
+      <h3>actorType<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/actorType</p>
+      <div class="comment">
+         <span class="markdown">Has actor type is used to assign a type to an actor.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#/type" title="http://gdelt.stream/onto/sem/type">type property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Actor" title="http://gdelt.stream/onto/sem/Actor">Actor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/ActorType" title="http://gdelt.stream/onto/sem/ActorType">Actor type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/eventProperty">
+      <h3>event property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/eventProperty</p>
+      <div class="comment">
+         <span class="markdown">Event properties connect Events to other SEM Core entities.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#/hasActor" title="http://gdelt.stream/onto/sem/hasActor">hasActor</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#/hasPlace" title="http://gdelt.stream/onto/sem/hasPlace">hasPlace</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#/hasSubEvent" title="http://gdelt.stream/onto/sem/hasSubEvent">hasSubevent</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#/hasTime" title="http://gdelt.stream/onto/sem/hasTime">hasTime</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/eventType">
+      <h3>eventType<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/eventType</p>
+      <div class="comment">
+         <span class="markdown">Has event type is used to assign a type to an event.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#/type" title="http://gdelt.stream/onto/sem/type">type property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Event" title="http://gdelt.stream/onto/sem/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/EventType" title="http://gdelt.stream/onto/sem/EventType">Event type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/hasSubType">
+      <h3>has subtype<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/hasSubType</p>
+      <div class="comment">
+         <span class="markdown">Has sub type is used to state that a type falls under another type. This is a generic aggregation relation that is used to generalize over various hierarchical relations that can exist between types.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Type" title="http://gdelt.stream/onto/sem/Type">Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/Type" title="http://gdelt.stream/onto/sem/Type">Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#/subTypeOf" title="http://gdelt.stream/onto/sem/subTypeOf">subTypeOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/hasActor">
+      <h3>hasActor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/hasActor</p>
+      <div class="comment">
+         <span class="markdown">Has actor is used to state which Actors or Objects participate in an Event.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#/eventProperty" title="http://gdelt.stream/onto/sem/eventProperty">event property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/Actor" title="http://gdelt.stream/onto/sem/Actor">Actor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/hasPlace">
+      <h3>hasPlace<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/hasPlace</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#/eventProperty" title="http://gdelt.stream/onto/sem/eventProperty">event property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/Place" title="http://gdelt.stream/onto/sem/Place">Place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/hasSubEvent">
+      <h3>hasSubevent<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/hasSubEvent</p>
+      <div class="comment">
+         <span class="markdown">Has subevent connects an Event to other Events that belong to it. This is a very generic property that does not mean the subevents fully define the superconcept or that there is any causal relationship.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#/eventProperty" title="http://gdelt.stream/onto/sem/eventProperty">event property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Event" title="http://gdelt.stream/onto/sem/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/Event" title="http://gdelt.stream/onto/sem/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#/subEventOf" title="http://gdelt.stream/onto/sem/subEventOf">subevent of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/hasTime">
+      <h3>hasTime<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/hasTime</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#/eventProperty" title="http://gdelt.stream/onto/sem/eventProperty">event property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/Time" title="http://gdelt.stream/onto/sem/Time">Time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/placeType">
+      <h3>placeType<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/placeType</p>
+      <div class="comment">
+         <span class="markdown">Has place type is used to assign a type to a place.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#/type" title="http://gdelt.stream/onto/sem/type">type property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Place" title="http://gdelt.stream/onto/sem/Place">Place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/PlaceType" title="http://gdelt.stream/onto/sem/PlaceType">Place type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/roleType">
+      <h3>roleType<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/roleType</p>
+      <div class="comment">
+         <span class="markdown">Has role type is used to assign a role type to a Role property constraint. This role is a subspecification of the eventProperty which it constrains. For example, if an Event hasActor an Actor and this property is given a Role Constraint, then roleType can be used to assign a role to the participation of the Actor in the Event indicated by hasActor.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#/type" title="http://gdelt.stream/onto/sem/type">type property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Role" title="http://gdelt.stream/onto/sem/Role">Role</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/RoleType" title="http://gdelt.stream/onto/sem/RoleType">Role type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/subEventOf">
+      <h3>subevent of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/subEventOf</p>
+      <div class="comment">
+         <span class="markdown">Inverse property of hasSubEvent</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#/hasSubEvent" title="http://gdelt.stream/onto/sem/hasSubEvent">hasSubevent</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/subTypeOf">
+      <h3>subTypeOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/subTypeOf</p>
+      <div class="comment">
+         <span class="markdown">The inverse property of hasSubType.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#subClassOf">sub class of</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#/hasSubType" title="http://gdelt.stream/onto/sem/hasSubType">has subtype</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/timeType">
+      <h3>timeType<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/timeType</p>
+      <div class="comment">
+         <span class="markdown">Has time type is used to assign a type to a time individual.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#/type" title="http://gdelt.stream/onto/sem/type">type property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Time" title="http://gdelt.stream/onto/sem/Time">Time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/TimeType" title="http://gdelt.stream/onto/sem/TimeType">Time type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/type">
+      <h3>type property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://gdelt.stream/onto/sem/type</p>
+      <div class="comment">
+         <span class="markdown">Type is the super property of the properties that are used to indicate the type of a Core instance, eventType, actorType, placeType, timeType; and of roleType. Types can be both classes and individuals, cf. OWL 2 punning.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#/actorType" title="http://gdelt.stream/onto/sem/actorType">actorType</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#/eventType" title="http://gdelt.stream/onto/sem/eventType">eventType</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#/placeType" title="http://gdelt.stream/onto/sem/placeType">placeType</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#/roleType" title="http://gdelt.stream/onto/sem/roleType">roleType</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#/timeType" title="http://gdelt.stream/onto/sem/timeType">timeType</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/Type" title="http://gdelt.stream/onto/sem/Type">Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp"
+            title="http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp">has begin timestamp</a>
+      </li>
+      <li>
+         <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestBeginTimeStamp"
+            title="http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestBeginTimeStamp">has earliest begin timestamp</a>
+      </li>
+      <li>
+         <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestEndTimeStamp"
+            title="http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestEndTimeStamp">has earliest end timestamp</a>
+      </li>
+      <li>
+         <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp"
+            title="http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp">has end timestamp</a>
+      </li>
+      <li>
+         <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp"
+            title="http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp">has latest begin timestamp</a>
+      </li>
+      <li>
+         <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestEndTimeStamp"
+            title="http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestEndTimeStamp">has latest end timestamp</a>
+      </li>
+      <li>
+         <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp"
+            title="http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp">hasTimestamp</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp">
+      <h3>has begin timestamp<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp</p>
+      <div class="comment">
+         <span class="markdown">Has begin timestamp is used to indicate the beginning of a time interval. Omitting the hasBeginTimeStamp while stating a hasEndTimeStamp is interpreted as an open ended interval.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp"
+                  title="http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp">hasTimestamp</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestBeginTimeStamp"
+                  title="http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestBeginTimeStamp">has earliest begin timestamp</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp"
+                  title="http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp">has latest begin timestamp</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestBeginTimeStamp">
+      <h3>has earliest begin timestamp<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestBeginTimeStamp</p>
+      <div class="comment">
+         <span class="markdown">Has earliest begin timestamp is used to indicate the earliest possible starting time of an uncertain time interval.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp"
+                  title="http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp">has begin timestamp</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestEndTimeStamp">
+      <h3>has earliest end timestamp<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestEndTimeStamp</p>
+      <div class="comment">
+         <span class="markdown">Has earliest end timestamp is used to indicate the earliest possible ending time of an uncertain time interval.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp"
+                  title="http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp">has end timestamp</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp">
+      <h3>has end timestamp<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp</p>
+      <div class="comment">
+         <span class="markdown">Has end timestamp is used to indicate the end of a time interval. Omitting the hasEndTimeStamp while stating a hasBeginTimeStamp is interpreted as an open ended interval.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp"
+                  title="http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp">hasTimestamp</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestEndTimeStamp"
+                  title="http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestEndTimeStamp">has earliest end timestamp</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestEndTimeStamp"
+                  title="http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestEndTimeStamp">has latest end timestamp</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp">
+      <h3>has latest begin timestamp<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp</p>
+      <div class="comment">
+         <span class="markdown">Has latest begin timestamp is used to indicate the latest possible starting time of an uncertain time interval.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp"
+                  title="http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp">has begin timestamp</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestEndTimeStamp">
+      <h3>has latest end timestamp<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestEndTimeStamp</p>
+      <div class="comment">
+         <span class="markdown">Has latest end timestamp is used to indicate the latest possible ending time of an uncertain time interval.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp"
+                  title="http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp">has end timestamp</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp">
+      <h3>hasTimestamp<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp</p>
+      <div class="comment">
+         <span class="markdown">Has timestamp is used to put time indicators on any individual. It is the most common way to state when an Event took place. There are subproperties of hasTimeStamp to represent time intervals and uncertain time intervals. If the exact moment is not known, but it is necessary to specify a certain time, use hasTime instead. All of these properties are also used to indicate the time at which a property under the Temporary Constraint is valid.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp"
+                  title="http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp">has begin timestamp</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp"
+                  title="http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp">has end timestamp</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="annotationproperties">
+   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#broadMatch" title="http://www.w3.org/2004/02/skos/core#broadMatch">
+            <span>broad match</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#closeMatch" title="http://www.w3.org/2004/02/skos/core#closeMatch">
+            <span>close match</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#exactMatch" title="http://www.w3.org/2004/02/skos/core#exactMatch">
+            <span>exact match</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#narrowMatch" title="http://www.w3.org/2004/02/skos/core#narrowMatch">
+            <span>narrow match</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#relatedMatch" title="http://www.w3.org/2004/02/skos/core#relatedMatch">
+            <span>related match</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#broadMatch">
+      <h3>broad match<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#broadMatch</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#closeMatch">
+      <h3>close match<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#closeMatch</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#exactMatch">
+      <h3>exact match<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#exactMatch</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#narrowMatch">
+      <h3>narrow match<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#narrowMatch</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#relatedMatch">
+      <h3>related match<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#relatedMatch</p>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</html>

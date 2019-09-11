@@ -1,0 +1,197 @@
+<http://gdelt.stream/onto/lode/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/format
+<http://purl.org/dc/terms/format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://gdelt.stream/onto/lode/atPlace
+<http://gdelt.stream/onto/lode/atPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gdelt.stream/onto/lode/atPlace> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation> .
+<http://gdelt.stream/onto/lode/atPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://gdelt.stream/onto/lode/Event> .
+<http://gdelt.stream/onto/lode/atPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.loa-cnr.it/ontologies/DUL.owl#Place> .
+<http://gdelt.stream/onto/lode/atPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThis property relates an event to some meaningful place, which may\nhave a name (e.g. \"Paris\") or may be defined relative to some other\nentity or entities (e.g. \"the unincorporated area between Carson and\nHarbor Gateway\"). An event may be related to more than one such\nplace."@en .
+<http://gdelt.stream/onto/lode/atPlace> <http://www.w3.org/2000/01/rdf-schema#label> "at place"@en .
+<http://gdelt.stream/onto/lode/atPlace> <http://www.w3.org/2004/02/skos/core#definition> "\na named or relatively specified place that is where\nan event happened."@en .
+# 
+# http://gdelt.stream/onto/lode/atTime
+<http://gdelt.stream/onto/lode/atTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gdelt.stream/onto/lode/atTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.loa-cnr.it/ontologies/DUL.owl#isObservableAt> .
+<http://gdelt.stream/onto/lode/atTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://gdelt.stream/onto/lode/atTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://gdelt.stream/onto/lode/Event> .
+<http://gdelt.stream/onto/lode/atTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#TemporalEntity> .
+<http://gdelt.stream/onto/lode/atTime> <http://www.w3.org/2000/01/rdf-schema#comment> "\nEquivalent definitions from other ontologies:\n\n* C4DM Event ontology: \"Relates an event to a time object, classifying\n  a time region (either instantaneous or having an extent).\""@en .
+<http://gdelt.stream/onto/lode/atTime> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThis property relates an event to some subjectively imposed temporal\nboundaries, i.e. a span of time. An event can be related to only one\nsuch span of time."@en .
+<http://gdelt.stream/onto/lode/atTime> <http://www.w3.org/2000/01/rdf-schema#label> "at time"@en .
+<http://gdelt.stream/onto/lode/atTime> <http://www.w3.org/2004/02/skos/core#definition> "\nan abstract instant or interval of\ntime that is when an event happened."@en .
+# 
+# http://gdelt.stream/onto/lode/circa
+<http://gdelt.stream/onto/lode/circa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gdelt.stream/onto/lode/circa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#TemporalEntity> .
+<http://gdelt.stream/onto/lode/circa> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#DateTimeInterval> .
+<http://gdelt.stream/onto/lode/circa> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThis property relates a span of time that cannot be precisely located\nin a chronological series to another span of time that can be\nprecisely located, thus asserting that the latter is an approximation\nof the former."@en .
+<http://gdelt.stream/onto/lode/circa> <http://www.w3.org/2000/01/rdf-schema#comment> "An temporal relation expressing nearness in time."@en .
+<http://gdelt.stream/onto/lode/circa> <http://www.w3.org/2000/01/rdf-schema#label> "circa"@en .
+<http://gdelt.stream/onto/lode/circa> <http://www.w3.org/2004/02/skos/core#definition> "\nan interval of time that can be\nprecisely described using calendar dates and clock times."@en .
+# 
+# http://gdelt.stream/onto/lode/illustrate
+<http://gdelt.stream/onto/lode/illustrate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gdelt.stream/onto/lode/illustrate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://gdelt.stream/onto/lode/illustrate> <http://www.w3.org/2000/01/rdf-schema#range> <http://gdelt.stream/onto/lode/Event> .
+<http://gdelt.stream/onto/lode/illustrate> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThis property relates any thing (typically a media object) to an event which it\nillustrates, documents or comments upon."@en .
+<http://gdelt.stream/onto/lode/illustrate> <http://www.w3.org/2000/01/rdf-schema#label> "illustrate"@en .
+<http://gdelt.stream/onto/lode/illustrate> <http://www.w3.org/2004/02/skos/core#definition> "\nan event illustrated by some thing (typically a media object)"@en .
+# 
+# http://gdelt.stream/onto/lode/inSpace
+<http://gdelt.stream/onto/lode/inSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gdelt.stream/onto/lode/inSpace> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion> .
+<http://gdelt.stream/onto/lode/inSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://gdelt.stream/onto/lode/inSpace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://gdelt.stream/onto/lode/Event> .
+<http://gdelt.stream/onto/lode/inSpace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<http://gdelt.stream/onto/lode/inSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "\nNote that a statement that relates an event to a region of space using\nthis property only asserts that an event occurred somewhere within\nthe region and does not assert that it occurred everywhere within the\nregion."@en .
+<http://gdelt.stream/onto/lode/inSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThis property relates an event to some subjectively imposed spatial\nboundaries, i.e. a region of space. An event can be related to only\none such region of space."@en .
+<http://gdelt.stream/onto/lode/inSpace> <http://www.w3.org/2000/01/rdf-schema#label> "in space"@en .
+<http://gdelt.stream/onto/lode/inSpace> <http://www.w3.org/2004/02/skos/core#definition> "\nan abstract region of space (e.g. a\ngeospatial point or region) that is where an event happened."@en .
+# 
+# http://gdelt.stream/onto/lode/involved
+<http://gdelt.stream/onto/lode/involved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gdelt.stream/onto/lode/involved> <http://www.w3.org/2000/01/rdf-schema#domain> <http://gdelt.stream/onto/lode/Event> .
+<http://gdelt.stream/onto/lode/involved> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.loa-cnr.it/ontologies/DUL.owl#Object> .
+<http://gdelt.stream/onto/lode/involved> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThis property relates an event to any physical, social, or mental\nobject or substance. It does not imply any causal relationship or\ninfluence or any other kind of explanatory relationship such as\ncreation, destruction, etc."@en .
+<http://gdelt.stream/onto/lode/involved> <http://www.w3.org/2000/01/rdf-schema#label> "involved"@en .
+<http://gdelt.stream/onto/lode/involved> <http://www.w3.org/2004/02/skos/core#definition> "\na (physical, social, or mental) object involved in\nan event."@en .
+# 
+# http://gdelt.stream/onto/lode/involvedAgent
+<http://gdelt.stream/onto/lode/involvedAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://gdelt.stream/onto/lode/involvedAgent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://gdelt.stream/onto/lode/involved> .
+<http://gdelt.stream/onto/lode/involvedAgent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://gdelt.stream/onto/lode/Event> .
+<http://gdelt.stream/onto/lode/involvedAgent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.loa-cnr.it/ontologies/DUL.owl#Agent> .
+<http://gdelt.stream/onto/lode/involvedAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThis property relates an event to anything with agency, such as a\n(legal or natural) person, a group, an organization, a computational\nagent, etc. It does not imply any causal relationship, influence,\nintentionality, etc."@en .
+<http://gdelt.stream/onto/lode/involvedAgent> <http://www.w3.org/2000/01/rdf-schema#label> "involved agent"@en .
+<http://gdelt.stream/onto/lode/involvedAgent> <http://www.w3.org/2004/02/skos/core#definition> "an agent involved in an event."@en .
+# 
+# http://purl.org/NET/c4dm/event.owl#agent
+<http://purl.org/NET/c4dm/event.owl#agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/NET/c4dm/event.owl#agent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://gdelt.stream/onto/lode/involvedAgent> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation
+<http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion
+<http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#isObservableAt
+<http://www.loa-cnr.it/ontologies/DUL.owl#isObservableAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://gdelt.stream/onto/lode/Event
+<http://gdelt.stream/onto/lode/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://gdelt.stream/onto/lode/Event> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://gdelt.stream/onto/lode/Event> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.loa-cnr.it/ontologies/DUL.owl#Event> .
+<http://gdelt.stream/onto/lode/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/dcmitype/Event> .
+<http://gdelt.stream/onto/lode/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "\nAn event consists of some temporal and spatial boundaries subjectively\nimposed on the flux of reality or imagination, that we wish to treat\nas an entity for the purposes of making statements about it. In\nparticular, we may wish to make statements that relate people, places,\nor things to an event."@en .
+<http://gdelt.stream/onto/lode/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "\nNote that, unlike some defintions of \"event,\" this definition does not\nspecify that an event involves a change of state, nor does it attempt\nto distinguish events from processes or states."@en .
+<http://gdelt.stream/onto/lode/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+<http://gdelt.stream/onto/lode/Event> <http://www.w3.org/2004/02/skos/core#definition> "\n\"Something that happened,\" as might be reported in a news article or\nexplained by a historian."@en .
+# 
+# http://purl.org/NET/c4dm/event.owl#Event
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/dc/dcmitype/Event
+<http://purl.org/dc/dcmitype/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#Agent
+<http://www.loa-cnr.it/ontologies/DUL.owl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#Event
+<http://www.loa-cnr.it/ontologies/DUL.owl#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#Object
+<http://www.loa-cnr.it/ontologies/DUL.owl#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.loa-cnr.it/ontologies/DUL.owl#Place
+<http://www.loa-cnr.it/ontologies/DUL.owl#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2006/time#DateTimeInterval
+<http://www.w3.org/2006/time#DateTimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+_:genid1 <http://xmlns.com/foaf/0.1/homepage> <http://www.cwi.nl/~troncy/> .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Raphaël Troncy" .
+_:genid2 <http://xmlns.com/foaf/0.1/homepage> <http://www.cwi.nl/~lynda/> .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Lynda Hardman" .
+_:genid3 <http://xmlns.com/foaf/0.1/homepage> <http://aeshin.org/> .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Ryan Shaw" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://linkedevents.org/ontology/html/> <http://purl.org/dc/terms/format> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "text/html" .
+_:genid4 <http://www.w3.org/2000/01/rdf-schema#label> "HTML"@en .
+# 
+<http://linkedevents.org/ontology/rdfxml/> <http://purl.org/dc/terms/format> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "application/rdf+xml" .
+_:genid5 <http://www.w3.org/2000/01/rdf-schema#label> "RDF/XML"@en .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

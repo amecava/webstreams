@@ -1,0 +1,138 @@
+<html>
+  <h2 id="intro" class="list">Introduction <span class="backlink"> </span></h2>
+  <span class="markdown">
+    Events are central elements in the representation of data from domains such
+    as history, 1 cultural heritage [3,6], multimedia [12] and geography [14].
+    Event-centered modeling captures the dynamic aspects of a domain. In
+    addition, events provide a natural way to explicate complicated relations
+    between people, places, actions and objects. In this paper we investigate
+    the representation of events on the Web. We propose an event model called
+    the Simple Event Model (SEM), which is designed with a minimum of semantic
+    commitment to achieve interoperability with data sets from various domains.
+    The diversity and openness of the Web poses challenges on the design of an
+    event model. We show how we minimally commit our model by assuming nothing
+    about the used vocabularies or the structure of the data. We draw further
+    requirements from two domains: historic events and events in the maritime
+    safety and security domain. Although very different, these domains do have
+    commonalities: from both it becomes apparent that the model needs to
+    represent not only the description of who did what, when and where, but also
+    the roles that each actor played, the time during which a role is valid and
+    the authority according to whom this role is assigned. Several event models
+    or ontologies have been published over the past years [3–8,12]. They differ
+    in their focus (class or property centered), domain speciﬁcity, size and
+    level of formalization. We review and compare the design choices of existing
+    models to explicate what SEM contributes to the existing literature. In
+    addition, we show how we create mappings from our model to existing event
+    models. Learning to properly use an event model is hard and populating it
+    with instances is a time consuming and error prone task. Therefore, we
+    designed a Prolog API for SEM. It facilitates the creation of SEM instances
+    by hiding some details of the model to a user and it is integrated with the
+    SWI-Prolog space [10] and semweb packages [13]. The combination of these
+    three provides a fast and efﬁcient indexing for geopositions as well as RDF
+    and literals (strings, numbers, dates, etc.), along with spatial, RDFS, OWL,
+    and rule reasoning. The remainder of this paper is organized as follows. We
+    present the general requirements that underly SEM’s design and how events
+    are modeled in SEM in Section 2. We provide a short overview of event models
+    in Section 5; we review in particular three models as representative
+    examples and compare them to SEM. The API and its coupling with the other
+    Prolog packages is demonstrated in Section 3, on examples from the maritime
+    domain. We conclude with a discussion and future work in Section 6. The RDF
+    code of SEM can be found online.</span
+  >
+  <div id="namespacedeclarations">
+    <h3 id="ns" class="list">Namespace declarations</h3>
+    <div id="ns" align="center">
+      <table>
+        <caption>
+          Table 1: Namespaces used in the document
+        </caption>
+        <tbody>
+          <tr>
+            <td><b>[Ontology NS Prefix]</b></td>
+            <td>&lt;http://gdelt.stream/onto/sem&gt;</td>
+          </tr>
+          <tr>
+            <td><b>owl</b></td>
+            <td>&lt;http://www.w3.org/2002/07/owl&gt;</td>
+          </tr>
+          <tr>
+            <td><b>xsd</b></td>
+            <td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td>
+          </tr>
+          <tr>
+            <td><b>dcmitype</b></td>
+            <td>&lt;http://purl.org/dc/dcmitype&gt;</td>
+          </tr>
+          <tr>
+            <td><b>en</b></td>
+            <td>&lt;http://sw.opencyc.org/2009/04/07/concept/en&gt;</td>
+          </tr>
+          <tr>
+            <td><b>skos</b></td>
+            <td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td>
+          </tr>
+          <tr>
+            <td><b>rdfs</b></td>
+            <td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td>
+          </tr>
+          <tr>
+            <td><b>ebkr</b></td>
+            <td>&lt;http://www.kulttuurisampo.fi/ebkr&gt;</td>
+          </tr>
+          <tr>
+            <td><b>onto</b></td>
+            <td>&lt;http://gdelt.stream/onto&gt;</td>
+          </tr>
+          <tr>
+            <td><b>wgs84-pos</b></td>
+            <td>&lt;http://www.w3.org/2003/01/geo/wgs84_pos&gt;</td>
+          </tr>
+          <tr>
+            <td><b>2006</b></td>
+            <td>&lt;http://www.w3.org/2006&gt;</td>
+          </tr>
+          <tr>
+            <td><b>0-1</b></td>
+            <td>&lt;http://xmlns.com/foaf/0.1&gt;</td>
+          </tr>
+          <tr>
+            <td><b>dolce-lite-owl</b></td>
+            <td>&lt;http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl&gt;</td>
+          </tr>
+          <tr>
+            <td><b>1-1</b></td>
+            <td>&lt;http://purl.org/dc/elements/1.1&gt;</td>
+          </tr>
+          <tr>
+            <td><b>rdf</b></td>
+            <td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td>
+          </tr>
+          <tr>
+            <td><b>terms</b></td>
+            <td>&lt;http://purl.org/dc/terms&gt;</td>
+          </tr>
+          <tr>
+            <td><b>erlangen-crm-090330-5-0-1-owl</b></td>
+            <td>
+              &lt;http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl&gt;
+            </td>
+          </tr>
+          <tr>
+            <td><b>sumo-owl-txt</b></td>
+            <td>
+              &lt;http://www.ontologyportal.org/translations/SUMO.owl.txt&gt;
+            </td>
+          </tr>
+          <tr>
+            <td><b>event-owl</b></td>
+            <td>&lt;http://purl.org/NET/c4dm/event.owl&gt;</td>
+          </tr>
+          <tr>
+            <td><b>ontology</b></td>
+            <td>&lt;http://linkedevents.org/ontology&gt;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</html>

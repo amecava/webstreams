@@ -1,0 +1,162 @@
+@prefix gdelt: <http://vocab.org/transit/terms/>.
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#>
+@prefix lode: <http://gdelt.stream/onto/lode/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/>.
+@prefix f: <http://gdelt.stream/onto/f/> .
+@prefix sem: <http://gdelt.stream/onto/sem/> .
+
+# Here there are some examples of simple queries with each ontology
+
+#1 Show all the events that has Italy as one of its actors:
+
+#SEM:
+
+SELECT *
+WHERE{
+    ?event  a sem:Event;
+            sem:hasActor ?actor.
+    ?actor gdelt:actorName "ITALY"^^xsd:string
+}
+
+#LODE:
+
+SELECT *
+WHERE{
+    ?event  a lode:Event;
+            dul:involvesAgent ?actor.
+    ?actor gdelt:actorName "ITALY"^^xsd:string
+}
+
+#F:
+
+SELECT *
+WHERE{
+    ?event  a dul:Event;
+            f:hasEventParticipant ?actor.
+    ?actor gdelt:actorName "ITALY"^^xsd:string
+}
+
+#2 Show all the events that has Italy as the place of one of its actors:
+
+#SEM
+
+SELECT *
+WHERE{
+    ?event  a sem:Event;
+            sem:hasActor ?actor.
+    ?actor sem:hasPlace "ITALY"^^xsd:string
+}
+
+#LODE
+
+SELECT *
+WHERE{
+    ?event  a lode:Event;
+            dul:involvesAgent ?actor.
+    ?actor dul:hasRegion "ITALY"^^xsd:string
+}
+
+#F
+
+SELECT *
+WHERE{
+    ?event  a dul:Event;
+            f:hasEventParticipant ?actor.
+    ?actor dul:hasRegion "ITALY"^^xsd:string
+}
+
+#3 Show all the events that happened in Italy:
+
+#SEM: 
+
+SELECT *
+WHERE{
+    ?event  a sem:Event;
+            sem:hasPlace ?place.
+    ?place gdelt:geoFullName "ITALY"^^xsd:string
+}
+
+#LODE: 
+
+SELECT *
+WHERE{
+    ?event  a lode:Event;
+            dul:hasRegion ?place.
+    ?place gdelt:geoFullName "ITALY"^^xsd:string
+}
+
+#F: 
+
+SELECT *
+WHERE{
+    ?event  a dul:Event;
+            dul:hasRegion ?place.
+    ?place gdelt:geoFullName "ITALY"^^xsd:string
+}
+#4 Show the URL of the event that have Actions only in United States
+    #(using 'ActionGeo_Type=2 'US State')
+
+#SEM
+
+SELECT ?sourceURL
+WHERE{
+    ?event  a sem:Event;
+            sem:hasPlace ?place;
+            sem:accordingTo ?sourceURL;
+    ?place sem:placeType "2"^^xsd:Integer.
+}
+
+#LODE
+
+SELECT ?sourceURL
+WHERE{
+    ?event  a lode:Event;
+            dul:hasRegion ?place;
+            dul:isDescribedBy ?sourceURL;
+    ?place dul:hasQuality "2"^^xsd:Integer.
+}
+
+#F
+
+SELECT ?sourceURL
+WHERE{
+    ?event  a dul:Event;
+            dul:hasRegion ?place;
+            dul:isDescribedBy ?sourceURL;
+    ?place dul:hasQuality "2"^^xsd:Integer.
+}
+
+#5 Find the top 10 most negative events 'using the AvgTone' with their Average Tones during the last 15 minutes
+
+#SEM
+
+SELECT ?globalEventID ?eventAVGTone
+WHERE{
+    ?event  a sem:Event;
+            gdelt:hasGlobalEventID ?globalEventID;
+            gdelt:toneAverage ?eventAVGTone.
+}
+ORDER BY ASC (?eventAVGTone)
+LIMIT 10
+
+#LODE
+
+SELECT ?globalEventID ?eventAVGTone
+WHERE{
+    ?event  a lode:Event;
+            gdelt:hasGlobalEventID ?globalEventID;
+            gdelt:toneAverage ?eventAVGTone.
+}
+ORDER BY ASC (?eventAVGTone)
+LIMIT 10
+
+#F
+
+SELECT ?globalEventID ?eventAVGTone
+WHERE{
+    ?event  a dul:Event;
+            gdelt:hasGlobalEventID ?globalEventID;
+            gdelt:toneAverage ?eventAVGTone.
+}
+ORDER BY ASC (?eventAVGTone)
+LIMIT 10

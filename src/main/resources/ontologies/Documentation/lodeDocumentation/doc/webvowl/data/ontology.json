@@ -1,0 +1,413 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.loa-cnr.it/ontologies/DUL.owl", "http://purl.org/NET/c4dm/event.owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://gdelt.stream/onto/lode", "http://www.w3.org/2001/XMLSchema", "http://purl.org/dc/dcmitype", "http://www.w3.org/2006/time" ],
+    "iri" : "http://gdelt.stream/onto/lode/"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "11",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "9",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.loa-cnr.it/ontologies/DUL.owl#Place",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/DUL.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#DateTimeInterval",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateTimeInterval"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://gdelt.stream/onto/lode/Event",
+    "equivalent" : [ "10", "11" ],
+    "baseIri" : "http://gdelt.stream/onto/lode",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "\n\"Something that happened,\" as might be reported in a news article or\nexplained by a historian.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Event",
+      "en" : "Event"
+    },
+    "comment" : {
+      "en" : "\nNote that, unlike some defintions of \"event,\" this definition does not\nspecify that an event involves a change of state, nor does it attempt\nto distinguish events from processes or states."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/DUL.owl#Object",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/DUL.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Object"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/event.owl#Event",
+    "baseIri" : "http://purl.org/NET/c4dm/event.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/DUL.owl#Event",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/DUL.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "9",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialThing"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://purl.org/dc/dcmitype/Event",
+    "baseIri" : "http://purl.org/dc/dcmitype",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/DUL.owl#Agent",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/DUL.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#TemporalEntity",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalEntity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/DUL.owl",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasLocation"
+    },
+    "domain" : "1",
+    "subproperty" : [ "2" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://gdelt.stream/onto/lode/illustrate",
+    "baseIri" : "http://gdelt.stream/onto/lode",
+    "range" : "6",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "\nan event illustrated by some thing (typically a media object)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "illustrate",
+      "en" : "illustrate"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "\nThis property relates any thing (typically a media object) to an event which it\nillustrates, documents or comments upon."
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/event.owl#agent",
+    "baseIri" : "http://purl.org/NET/c4dm/event.owl",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "agent"
+    },
+    "superproperty" : [ "13" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://gdelt.stream/onto/lode/circa",
+    "baseIri" : "http://gdelt.stream/onto/lode",
+    "range" : "4",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "\nan interval of time that can be\nprecisely described using calendar dates and clock times.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "circa",
+      "en" : "circa"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "\nThis property relates a span of time that cannot be precisely located\nin a chronological series to another span of time that can be\nprecisely located, thus asserting that the latter is an approximation\nof the former."
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://gdelt.stream/onto/lode/inSpace",
+    "baseIri" : "http://gdelt.stream/onto/lode",
+    "range" : "17",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "\nan abstract region of space (e.g. a\ngeospatial point or region) that is where an event happened.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inSpace",
+      "en" : "in space"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "\nThis property relates an event to some subjectively imposed spatial\nboundaries, i.e. a region of space. An event can be related to only\none such region of space."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://gdelt.stream/onto/lode/atPlace",
+    "baseIri" : "http://gdelt.stream/onto/lode",
+    "range" : "3",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "\na named or relatively specified place that is where\nan event happened.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "atPlace",
+      "en" : "at place"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "\nThis property relates an event to some meaningful place, which may\nhave a name (e.g. \"Paris\") or may be defined relative to some other\nentity or entities (e.g. \"the unincorporated area between Carson and\nHarbor Gateway\"). An event may be related to more than one such\nplace."
+    },
+    "attributes" : [ "object" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://gdelt.stream/onto/lode/atTime",
+    "baseIri" : "http://gdelt.stream/onto/lode",
+    "range" : "16",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "\nan abstract instant or interval of\ntime that is when an event happened.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "atTime",
+      "en" : "at time"
+    },
+    "superproperty" : [ "21" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "\nThis property relates an event to some subjectively imposed temporal\nboundaries, i.e. a span of time. An event can be related to only one\nsuch span of time."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/DUL.owl#isObservableAt",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/DUL.owl",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isObservableAt"
+    },
+    "domain" : "1",
+    "subproperty" : [ "20" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://gdelt.stream/onto/lode/involvedAgent",
+    "baseIri" : "http://gdelt.stream/onto/lode",
+    "range" : "22",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "an agent involved in an event.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "involvedAgent",
+      "en" : "involved agent"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "6",
+    "subproperty" : [ "12" ],
+    "comment" : {
+      "en" : "\nThis property relates an event to anything with agency, such as a\n(legal or natural) person, a group, an organization, a computational\nagent, etc. It does not imply any causal relationship, influence,\nintentionality, etc."
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://gdelt.stream/onto/lode/involved",
+    "baseIri" : "http://gdelt.stream/onto/lode",
+    "range" : "14",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "\na (physical, social, or mental) object involved in\nan event.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "involved",
+      "en" : "involved"
+    },
+    "domain" : "6",
+    "subproperty" : [ "13" ],
+    "comment" : {
+      "en" : "\nThis property relates an event to any physical, social, or mental\nobject or substance. It does not imply any causal relationship or\ninfluence or any other kind of explanatory relationship such as\ncreation, destruction, etc."
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/DUL.owl",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasRegion"
+    },
+    "domain" : "1",
+    "subproperty" : [ "18" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "19"
+  } ]
+}
