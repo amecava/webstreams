@@ -149,7 +149,8 @@
   <#PlaceTriplesMap> rml:logicalSource <source> ;
 
   rr:subjectMap [
-      rr:class dul:SpaceRegion
+    rr:template "http://gdelt.stream/inst/{ActionGeo_FullName}";
+      rr:class dul:SpaceRegion;
     ];
 
   rr:predicateObjectMap [
@@ -158,13 +159,6 @@
       rml:reference "ActionGeo_Type";
         ]
       ];
-
-  rr:predicateObjectMap [
-    rr:predicate gdelt:geoFullName;
-    rr:objectMap [
-      rml:reference "ActionGeo_FullName";
-      ]
-    ];
 
   rr:predicateObjectMap [
     rr:predicate gdelt:geoCountryCode;
@@ -289,20 +283,14 @@
   <#Actor1PlaceTriplesMap> rml:logicalSource <source> ;
 
   rr:subjectMap [
-      rr:class dul:SpaceRegion
+    rr:template "http://gdelt.stream/inst/{Actor1Geo_FullName}";
+      rr:class dul:SpaceRegion;
     ];
 
   rr:predicateObjectMap [
     rr:predicate dul:hasQuality;
     rr:objectMap [
       rml:reference "Actor1Geo_Type";
-      ]
-    ];
-
-  rr:predicateObjectMap [
-    rr:predicate gdelt:geoFullName;
-    rr:objectMap [
-      rml:reference "Actor1Geo_FullName";
       ]
     ];
 
@@ -429,20 +417,14 @@
   <#Actor2PlaceTriplesMap> rml:logicalSource <source> ;
 
   rr:subjectMap [
-      rr:class dul:SpaceRegion
+    rr:template "http://gdelt.stream/inst/{Actor2Geo_FullName}";
+      rr:class dul:SpaceRegion;
     ];
 
   rr:predicateObjectMap [
     rr:predicate dul:hasQuality;
     rr:objectMap [
       rml:reference "Actor2Geo_Type";
-      ]
-    ];
-
-  rr:predicateObjectMap [
-    rr:predicate gdelt:geoFullName;
-    rr:objectMap [
-      rml:reference "Actor2Geo_FullName";
       ]
     ];
 
